@@ -1,4 +1,4 @@
-![Promptskolen](assets/promptskolen.png)
+![Promptskolen](https://raw.githubusercontent.com/SAIBASPACE/.github/main/assets/promptskolen.png)
 
 # Prompt Skolen
 
