@@ -65,7 +65,3 @@ Når du har nok information, løs opgaven.
 ```
 
 ---
-
-## Næste lektion
-
-[Lektion 2: ChatGPT →](../Lektion_2/)
