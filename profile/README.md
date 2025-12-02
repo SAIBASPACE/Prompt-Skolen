@@ -1,3 +1,5 @@
+![Promptskolen](assets/promptskolen.png)
+
 # Prompt Skolen
 
 **Gratis, praktisk guide til AI-prompts for danske virksomheder.**
