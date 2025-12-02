@@ -46,12 +46,6 @@ Det lærer du i [Lektion_1](./Lektion_1/).
 
 ---
 
-## Bidrag til guiden
-
-Fandt du en fejl? Har du en bedre skabelon? Se [CONTRIBUTE.md](./CONTRIBUTE.md).
-
----
-
 ## Sikkerhed (læs dette)
 
 **Må ALDRIG indtastes i gratis AI-værktøjer:**
@@ -68,5 +62,3 @@ Enterprise-versioner (ChatGPT Enterprise, Copilot 365, Claude Pro) har databesky
 ## Vedligeholdelse
 
 Guiden opdateres løbende. Sidste opdatering: 2025-01-XX
-
-AI-værktøjer ændrer sig hurtigt. Hvis en prompt ikke virker som beskrevet, opret et [issue](../../issues).
