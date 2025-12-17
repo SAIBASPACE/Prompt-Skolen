@@ -42,6 +42,21 @@ Skriv et venligt svar der:
 - Max 80 ord
 ```
 
+### Resultat
+
+```
+Hej [Kunde navn],
+
+Jeg undskylder den forsinkelse du oplever med din pakke. Det er ikke acceptabelt at du ikke har hørt fra os.
+
+Jeg undersøger din ordre nu og kontakter vores lager. Du hører fra mig inden for 2 hverdage med en opdatering og løsning.
+
+Mange tak for din tålmodighed.
+
+Venlig hilsen,
+[Dit navn]
+```
+
 ---
 
 ## ChatGPT Plus (20 USD/måned)
@@ -56,6 +71,12 @@ Skriv et venligt svar der:
 - **DALL-E** (billede-generering)
 - **Browsing** (kan søge på nettet)
 - **Code Interpreter** (kører Python-kode)
+
+### Plus gevinster
+
+- **30 sek** Hurtigere email-svar med hukommelse
+- **10 min** Mindre research tid med browsing
+- **5x** Hurtigere dokument-analyse med fil-upload
 
 ---
 
@@ -95,7 +116,7 @@ Skriv en opfølgningsmail til en kunde vi mødtes med i går
 
 ChatGPT ved allerede din virksomhed, tone og kontekst.
 
-### Eksempel der fejler (uden hukommelse)
+### Eksempel der fejler
 
 ```
 Skriv en opfølgningsmail
@@ -120,11 +141,10 @@ Specialiserede assistenter du kan bygge eller bruge.
 
 ### Byg din egen GPT
 
-1. Gå til chatgpt.com/gpts
-2. Klik "Create"
-3. Beskriv hvad GPT'en skal gøre
-4. Upload relevante dokumenter (fx brand guidelines)
-5. Test og juster
+- **S:** Setup - Definer formål og rolle
+- **I:** Instructions - Skriv klare retningslinjer  
+- **K:** Knowledge - Upload relevante dokumenter
+- **T:** Test - Afprøv og juster funktionalitet
 
 ### Eksempel: Virksomheds-GPT
 
@@ -160,14 +180,18 @@ Opsummer dette dokument i 5 bullet points.
 Fremhæv de vigtigste tal og konklusioner.
 ```
 
-### Eksempel: Excel-analyse
-
-Upload en Excel-fil:
+### Resultat
 
 ```
-Analysér salgsdata for Q3.
-Find top 3 produkter og beregn vækst vs. Q2.
-Vis resultat som tabel.
+Baseret på dit dokument:
+
+• Hovedkonklusion: Salget steg 23% i Q3 sammenlignet med Q2
+• Bedste produkter: Premium-serien tegnede sig for 67% af væksten
+• Udfordringer: Kun 45% markedsandel i Jylland vs. 78% på Sjælland
+• Anbefalinger: Fokusér markedsføring på Jylland i Q4
+• Budget: Foreslået marketing-boost på 2.1M DKK for at lukke gabet
+
+Skal jeg dykke dybere ned i nogle af disse punkter?
 ```
 
 ---
@@ -186,9 +210,9 @@ ChatGPT kan søge på nettet i realtid.
 ### Eksempel der virker
 
 ```
-Søg efter de nyeste anmeldelser af [produkt] fra 2024.
-Opsummer fordele og ulemper fra mindst 3 kilder.
-Inkluder links.
+Søg efter de nyeste anmeldelser af iPhone 15 Pro 256GB i Danmark.
+Sammenlign priser på Elgiganten, Power og Apple Store.
+Inkluder links og find bedste tilbud.
 ```
 
 ### Eksempel der fejler
@@ -198,13 +222,6 @@ Hvad koster en iPhone?
 ```
 
 **Hvorfor:** For vagt. Hvilken model? Hvor? Ny eller brugt?
-
-### Bedre version
-
-```
-Søg efter prisen på iPhone 15 Pro 256GB i Danmark.
-Sammenlign Elgiganten, Power og Apple Store.
-```
 
 ---
 
@@ -250,19 +267,16 @@ Konverter denne Excel-fil til CSV med semikolon som separator.
 
 ## Begrænsninger
 
+> **Advarsel:** ChatGPT Plus har stadig begrænsninger du skal være opmærksom på.
+> 
+> Hukommelse kan være upræcis, browsing kan misse den nyeste information, og Code Interpreter har timeout på lange opgaver. Custom GPTs kræver løbende vedligeholdelse.
+
 ### Gratis version
 
 - Begrænset antal beskeder (varierer)
 - Ingen fil-upload
 - Ingen hukommelse
 - Kan blive langsom i spidsbelastning
-
-### Plus version
-
-- Hukommelse kan være upræcis
-- Browsing kan misse nyeste info
-- Code Interpreter har timeout på lange opgaver
-- Custom GPTs kræver vedligeholdelse
 
 ---
 
@@ -278,19 +292,15 @@ Konverter denne Excel-fil til CSV med semikolon som separator.
 
 ---
 
-## Øvelser
+## Øvelse — 20 minutter
 
-### Øvelse 1: Hukommelse
+Test ChatGPT's forskellige funktioner:
 
-Sæt hukommelse op med din arbejdskontekst. Test ved at bede om en email uden at specificere firma eller tone.
+**Del 1 (5 min):** Sæt hukommelse op med din arbejdskontekst. Test ved at bede om en email uden at specificere firma eller tone.
 
-### Øvelse 2: Fil-analyse
+**Del 2 (10 min):** Upload et dokument du arbejder med. Bed ChatGPT opsummere og finde nøgletal.
 
-Upload et dokument du arbejder med. Bed ChatGPT opsummere og finde nøgletal.
-
-### Øvelse 3: Custom GPT
-
-Lav en simpel GPT til en gentagen opgave (fx mødeopsamling, email-skabeloner).
+**Del 3 (5 min):** Prøv at browse efter aktuel information om dit fagområde. Sammenlign med din nuværende viden.
 
 ---
 
