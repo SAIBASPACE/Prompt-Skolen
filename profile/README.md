@@ -10,13 +10,13 @@ Ingen teori. Kun eksempler der virker, eksempler der fejler, og øvelser du kan 
 
 ## Sådan bruger du guiden
 
-**Nybegynder?** Start med [Lektion_1](./Lektion_1/) - det tager 30 minutter og gør dig bedre end 90% af alle AI-brugere.
+**Nybegynder?** Start med [Lektion 1: 7 teknikker alle skal kunne](./Lektion_1/) - det tager 30 minutter og gør dig bedre end 90% af alle AI-brugere.
 
 **Kender du basics?** Gå direkte til dit værktøj:
-- ChatGPT (gratis + Plus)
-- Microsoft Copilot (gratis + 365)
-- Claude (gratis + Pro)
-- Gemini (gratis + Workspace)
+- ChatGPT (gratis + Plus) - *kommer snart*
+- [Lektion 3: Microsoft Copilot](./Lektion_3/) (gratis + Microsoft 365)
+- Claude (gratis + Pro) - *kommer snart*
+- Gemini (gratis + Workspace) - *kommer snart*
 
 ---
 
