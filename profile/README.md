@@ -15,6 +15,8 @@ Ingen teori. Kun eksempler der virker, eksempler der fejler, og øvelser du kan 
 **Kender du basics?** Gå direkte til dit værktøj:
 - ChatGPT (gratis + Plus) - *kommer snart*
 - [Lektion 3: Microsoft Copilot](./Lektion_3/) (gratis + Microsoft 365)
+- [Lektion 2: ChatGPT](./Lektion_2/) (gratis + Plus)
+- Microsoft Copilot (gratis + 365) - *kommer snart*
 - Claude (gratis + Pro) - *kommer snart*
 - Gemini (gratis + Workspace) - *kommer snart*
 
