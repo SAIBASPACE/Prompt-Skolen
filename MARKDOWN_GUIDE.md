@@ -67,7 +67,10 @@ Skriv en jobannonce for en CNC-operatør.
 ```
 ```
 
-**VIGTIGT:** To code blocks direkte efter hinanden (ingen tekst imellem)
+**VIGTIGT:**
+- To code blocks direkte efter hinanden (ingen tekst imellem)
+- Begge code blocks skal være i **samme section** (under samme `##` header)
+- Section titlen er typisk "Sammenligning", "Eksempel der virker", eller lignende
 
 ### Bliver til HTML:
 ```html
@@ -85,10 +88,12 @@ Skriv en jobannonce for en CNC-operatør.
 ```
 
 ### ✅ Regler:
-- **Første code block** = `.bad` (dårlig prompt)
-- **Anden code block** = `.good` (god prompt) med "Kopier" knap
+- **Første code block** = `.bad` (dårlig prompt - får rød border)
+- **Anden code block** = `.good` (god prompt - får grøn border) med "Kopier" knap
 - Ingen tekst mellem de to code blocks
-- Typisk under `## Sammenligning` eller `## Eksempel der virker`
+- **Begge code blocks skal være i samme section** (under samme H2)
+- Section titel bliver automatisk "SAMMENLIGNING" i UI'et
+- Labels "UDEN [teknik]" og "MED [teknik]" tilføjes automatisk
 
 ---
 
@@ -341,14 +346,29 @@ Lektion_X/
 Dårlig prompt
 ```
 
-Her er noget tekst  <!-- ❌ FORKERT -->
+Her er noget tekst  <!-- ❌ FORKERT - transformation vil ikke virke -->
 
 ```
 God prompt
 ```
 ```
 
-### ✅ Korrekt (ingen tekst imellem)
+### ❌ Code blocks i separate sections
+```markdown
+## Eksempel der virker
+
+```
+God prompt
+```
+
+## Eksempel der fejler  <!-- ❌ FORKERT - separate sections -->
+
+```
+Dårlig prompt
+```
+```
+
+### ✅ Korrekt (samme section, ingen tekst imellem)
 ```markdown
 ## Sammenligning
 
@@ -357,7 +377,7 @@ Dårlig prompt
 ```
 
 ```
-God prompt
+God prompt med teknikken
 ```
 ```
 
