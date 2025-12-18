@@ -267,7 +267,7 @@ Konverter denne Excel-fil til CSV med semikolon som separator.
 
 ## Begrænsninger
 
-> **Advarsel:** ChatGPT Plus har stadig begrænsninger du skal være opmærksom på.
+> **Info:** ChatGPT Plus har stadig begrænsninger du skal være opmærksom på.
 > 
 > Hukommelse kan være upræcis, browsing kan misse den nyeste information, og Code Interpreter har timeout på lange opgaver. Custom GPTs kræver løbende vedligeholdelse.
 
