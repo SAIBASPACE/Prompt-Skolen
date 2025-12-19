@@ -232,13 +232,14 @@ Format:
 
 Åbn et tomt Word-dokument. Brug Copilot til at skrive et udkast til:
 
+**Copyable:**
 ```
 Skriv en email om juleferie til dit team.
 
 Info:
-- Kontoret lukker 23. dec til 2. jan
-- Nødtelefon: [dit nummer]
-- Kunder skal informeres inden 20. dec
+- Kontoret lukker [startdato] til [slutdato]
+- Nødtelefon: [nummer]
+- Kunder skal informeres inden [dato]
 
 Tone: Professionel men varm
 Længde: Max 150 ord
@@ -250,8 +251,9 @@ Sammenlign med hvad du selv ville skrive. Hvad skal justeres?
 
 Åbn PowerPoint. Brug Copilot til at lave en præsentation om et projekt du arbejder på:
 
+**Copyable:**
 ```
-Lav en præsentation om [dit projekt].
+Lav en præsentation om [projektnavn].
 
 Slides:
 1. Hvad er projektet

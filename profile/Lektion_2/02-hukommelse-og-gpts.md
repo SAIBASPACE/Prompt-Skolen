@@ -33,11 +33,12 @@ Med hukommelse skriver du kun opgaven. ChatGPT kender allerede konteksten.
 
 Fortæl ChatGPT hvad den skal huske:
 
+**Copyable:**
 ```
-Husk: Jeg hedder Maria, arbejder som marketingchef hos GreenTech.
-Vi sælger bæredygtige emballageløsninger til fødevareindustrien.
-Vi har 25 ansatte og bruger HubSpot som CRM.
-Vores tone er professionel men jordnær - ingen buzzwords.
+Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
+Vi sælger [produkt/ydelse] til [målgruppe].
+Vi har [antal] ansatte og bruger [værktøj] som CRM.
+Vores tone er [beskrivelse] - ingen buzzwords.
 ```
 
 ChatGPT svarer: "Jeg har gemt det. Jeg vil huske det til næste gang."
@@ -58,15 +59,17 @@ ChatGPT viser en liste over alt den har gemt.
 
 ## Opdater hukommelse
 
+**Copyable:**
 ```
-Husk også: Vi lancerede nyt produkt "EcoPack" i marts 2024.
-Det reducerer plastik med 40% sammenlignet med standard emballage.
+Husk også: Vi lancerede nyt produkt "[navn]" i [måned] [år].
+Det [unik værdi/fordel] sammenlignet med [alternativ].
 ```
 
 Eller ret eksisterende info:
 
+**Copyable:**
 ```
-Opdater: Vi har nu 30 ansatte (ikke 25).
+Opdater: Vi har nu [nyt antal] ansatte (ikke [gammelt antal]).
 ```
 
 ---
@@ -108,6 +111,8 @@ Skriv en LinkedIn-post om vores nye produkt
 ### Eksempel 1: Email-skrivning
 
 **Første gang (med hukommelse):**
+
+**Copyable:**
 ```
 Husk: Vi sender altid mødebekræftelser samme dag.
 Format: Bekræft dato/tid, vedhæft dagsorden, slut med "Glæder mig".
@@ -115,8 +120,10 @@ Max 80 ord.
 ```
 
 **Fremover:**
+
+**Copyable:**
 ```
-Skriv mødebekræftelse til Peter - tirsdag kl 14
+Skriv mødebekræftelse til [navn] - [dag] kl [tid]
 ```
 
 ChatGPT bruger automatisk dit format.
@@ -126,17 +133,21 @@ ChatGPT bruger automatisk dit format.
 ### Eksempel 2: Kunde-kommunikation
 
 **Første gang:**
+
+**Copyable:**
 ```
 Husk: Vores standardsvar til kundeforespørgsler:
-- Bekræft modtagelse inden for 4 timer
+- Bekræft modtagelse inden for [antal] timer
 - Giv konkret tidslinje for svar
 - Undgå "vi beklager ulejligheden" - vær proaktiv
-- Sign off: "Med venlig hilsen, [mit navn] - Kundeservice"
+- Sign off: "Med venlig hilsen, [navn] - [titel]"
 ```
 
 **Fremover:**
+
+**Copyable:**
 ```
-Kunde spørger om leveringstid på ordre #4521
+Kunde spørger om [emne] på ordre #[nummer]
 ```
 
 ChatGPT følger dine retningslinjer automatisk.
@@ -172,12 +183,16 @@ Find dem under "Explore GPTs" i ChatGPT Plus.
 **1. Klik "Create a GPT"** i ChatGPT Plus
 
 **2. Definer formål**
+
+**Copyable:**
 ```
 Dette er en skriveassistent til [Firma].
 Den skriver emails, opslag og dokumenter i vores tone.
 ```
 
 **3. Giv instruktioner**
+
+**Copyable:**
 ```
 Instruktioner:
 - Brug altid dansk (ingen engelske buzzwords)
@@ -208,24 +223,26 @@ Prøv forskellige prompts. Ret instruktionerne hvis output er forkert.
 **Beskrivelse:** Skriver emails, dokumenter og social media i TechPros tone.
 
 **Instruktioner:**
+
+**Copyable:**
 ```
-Du er skriveassistent for TechPro, en dansk IT-konsulentvirksomhed med 20 ansatte.
+Du er skriveassistent for [Firma], en dansk [branche] med [antal] ansatte.
 
 Regler:
 - Skriv altid på dansk
-- Professionel men jordnær tone
-- Max 100 ord medmindre andet specificeres
+- [Tone beskrivelse]
+- Max [antal] ord medmindre andet specificeres
 - Inkludér konkret handling i alle emails
 - Undgå: "Jeg håber denne email finder dig vel", buzzwords, klichéer
 
 Produkter:
-- Cloud migration (Azure, AWS)
-- Microsoft 365 implementering
-- IT-support abonnementer
+- [Produkt 1]
+- [Produkt 2]
+- [Produkt 3]
 
 Kunder:
-- SMV'er (10-100 ansatte)
-- Primært Jylland
+- [Målgruppe beskrivelse]
+- [Geografisk område]
 ```
 
 **Viden uploadet:**
@@ -255,10 +272,14 @@ Kunder:
 ## Øvelse (10 minutter)
 
 **Del 1 (5 min):** Sæt hukommelse op med din arbejdskontekst:
-- Dit navn og rolle
-- Virksomhed og antal ansatte
-- Værktøjer I bruger
-- Tone I skriver i
+
+**Copyable:**
+```
+Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
+Vi har [antal] ansatte og sælger [produkt/ydelse].
+Værktøjer: [liste værktøjer]
+Tone: [beskrivelse af tone]
+```
 
 **Del 2 (5 min):** Test hukommelsen. Bed ChatGPT om en email uden at specificere firma eller tone. Tjek om den bruger din gemte kontekst.
 

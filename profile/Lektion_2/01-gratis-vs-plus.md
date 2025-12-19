@@ -137,6 +137,7 @@ Skriv en opfølgningsmail til en kunde vi mødtes med i går
 
 **Plus brugere:** Sæt hukommelse op med din arbejdskontekst:
 
+**Copyable:**
 ```
 Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
 Vi bruger [værktøjer] og har [antal] ansatte.

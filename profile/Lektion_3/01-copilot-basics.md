@@ -131,6 +131,7 @@ Med Copilot i Microsoft 365 får du:
 
 Gå til copilot.microsoft.com og test en simpel prompt:
 
+**Copyable:**
 ```
 Skriv en email til en kunde der spørger om leveringstid.
 Svar: Vi sender i morgen, levering onsdag.

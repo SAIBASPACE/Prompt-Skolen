@@ -14,6 +14,7 @@ Systemet parser markdown og anvender automatiske transformationer baseret på m�
 | **transformPromptCompare** | To code blocks efter hinanden | `.prompt-compare` med `.bad` og `.good` |
 | **transformAISimulation** | Code block efter "Output:" eller "Eksempel output:" | `.ai-simulation` box med typewriter effekt |
 | **transformExercise** | Section med "Øvelse" i titel | `.exercise` box med timer ikon |
+| **transformCopyablePrompt** | `**Copyable:**` før code block | `.prompt-box.neutral` med copy-knap |
 
 ---
 
@@ -169,7 +170,50 @@ Tag din næste AI-opgave. Tilføj en relevant persona i starten af din prompt.
 
 ---
 
-## 5. Standard Markdown Elementer
+## 5. Copyable Prompt Box (`.prompt-box.neutral`)
+
+### I markdown:
+```markdown
+## Sådan sætter du hukommelse op
+
+**Copyable:**
+```
+Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
+Vi sælger [produkt] til [målgruppe].
+Vi har [antal] ansatte og bruger [værktøjer] som CRM.
+Vores tone er [beskrivelse].
+```
+```
+
+**VIGTIGT:** Brug `**Copyable:**` før code blocks der er templates til brugeren
+
+### Bliver til HTML:
+```html
+<div class="prompt-box neutral">
+  <button class="copy-btn" onclick="copyPrompt(this)">Kopier</button>
+  <div class="prompt-text">Husk: Jeg hedder [navn]...</div>
+</div>
+```
+
+### ✅ Regler:
+- Brug `**Copyable:**` direkte før en code block
+- Grå neutral styling (hverken bad eller good)
+- Automatisk "Kopier" knap i øverste højre hjørne
+- Intet label (i modsætning til `.bad` og `.good` boxes)
+- Bruges til prompt-templates brugeren skal udfylde og bruge
+
+### Hvornår skal du bruge det?
+
+| Brug Copyable | Ikke Copyable |
+|---------------|---------------|
+| Setup prompts med placeholders `[navn]` | Simple kommandoer: `git status` |
+| Lange instruktioner til Custom GPTs | Korte queries: `Hvad husker du?` |
+| Templates brugeren skal tilpasse | Eksempel-output fra AI |
+| Multi-linje prompts med struktur | Inline kode-eksempler |
+
+---
+
+## 6. Standard Markdown Elementer
 
 ### Tabeller
 ```markdown
