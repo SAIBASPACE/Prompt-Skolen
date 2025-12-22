@@ -33,7 +33,6 @@ Med hukommelse skriver du kun opgaven. ChatGPT kender allerede konteksten.
 
 Fortæl ChatGPT hvad den skal huske:
 
-**Copyable:**
 ```
 Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
 Vi sælger [produkt/ydelse] til [målgruppe].
@@ -59,7 +58,6 @@ ChatGPT viser en liste over alt den har gemt.
 
 ## Opdater hukommelse
 
-**Copyable:**
 ```
 Husk også: Vi lancerede nyt produkt "[navn]" i [måned] [år].
 Det [unik værdi/fordel] sammenlignet med [alternativ].
@@ -67,7 +65,6 @@ Det [unik værdi/fordel] sammenlignet med [alternativ].
 
 Eller ret eksisterende info:
 
-**Copyable:**
 ```
 Opdater: Vi har nu [nyt antal] ansatte (ikke [gammelt antal]).
 ```
@@ -86,23 +83,31 @@ ChatGPT sletter alle gemte oplysninger.
 
 ---
 
-## Sammenligning
+## Eksempel der virker
+
+**Med hukommelse:**
 
 ```
 Skriv en LinkedIn-post om vores nye produkt
 ```
 
-```
-Husk: Jeg arbejder hos GreenTech, vi sælger bæredygtig emballage.
-Vores nye produkt hedder EcoPack og reducerer plastik med 40%.
-Tone: Professionel men jordnær, ingen buzzwords.
+**Resultat:** ChatGPT skriver i din tone fordi den husker: Du arbejder hos GreenTech, sælger EcoPack, tone er professionel men jordnær.
 
+---
+
+## Eksempel der fejler
+
+**Uden hukommelse:**
+
+```
 Skriv en LinkedIn-post om vores nye produkt
 ```
 
-**Med hukommelse:** Du skriver kun første linje. ChatGPT kender resten.
-
-**Uden hukommelse:** Du gentager kontekst i hver prompt.
+**Hvorfor det fejler:**
+- Du skal gentage al kontekst i hver prompt
+- ChatGPT ved ikke hvilket produkt
+- Kender ikke din tone eller virksomhed
+- Generisk output der ikke passer
 
 ---
 
@@ -112,7 +117,6 @@ Skriv en LinkedIn-post om vores nye produkt
 
 **Første gang (med hukommelse):**
 
-**Copyable:**
 ```
 Husk: Vi sender altid mødebekræftelser samme dag.
 Format: Bekræft dato/tid, vedhæft dagsorden, slut med "Glæder mig".
@@ -121,7 +125,6 @@ Max 80 ord.
 
 **Fremover:**
 
-**Copyable:**
 ```
 Skriv mødebekræftelse til [navn] - [dag] kl [tid]
 ```
@@ -134,7 +137,6 @@ ChatGPT bruger automatisk dit format.
 
 **Første gang:**
 
-**Copyable:**
 ```
 Husk: Vores standardsvar til kundeforespørgsler:
 - Bekræft modtagelse inden for [antal] timer
@@ -145,7 +147,6 @@ Husk: Vores standardsvar til kundeforespørgsler:
 
 **Fremover:**
 
-**Copyable:**
 ```
 Kunde spørger om [emne] på ordre #[nummer]
 ```
@@ -184,7 +185,6 @@ Find dem under "Explore GPTs" i ChatGPT Plus.
 
 **2. Definer formål**
 
-**Copyable:**
 ```
 Dette er en skriveassistent til [Firma].
 Den skriver emails, opslag og dokumenter i vores tone.
@@ -192,7 +192,6 @@ Den skriver emails, opslag og dokumenter i vores tone.
 
 **3. Giv instruktioner**
 
-**Copyable:**
 ```
 Instruktioner:
 - Brug altid dansk (ingen engelske buzzwords)
@@ -224,7 +223,6 @@ Prøv forskellige prompts. Ret instruktionerne hvis output er forkert.
 
 **Instruktioner:**
 
-**Copyable:**
 ```
 Du er skriveassistent for [Firma], en dansk [branche] med [antal] ansatte.
 
@@ -273,7 +271,6 @@ Kunder:
 
 **Del 1 (5 min):** Sæt hukommelse op med din arbejdskontekst:
 
-**Copyable:**
 ```
 Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
 Vi har [antal] ansatte og sælger [produkt/ydelse].

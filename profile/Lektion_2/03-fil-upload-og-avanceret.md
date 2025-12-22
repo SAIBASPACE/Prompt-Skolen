@@ -146,7 +146,6 @@ Brug det til:
 
 Upload en CSV-fil med salgsdata og skriv:
 
-**Copyable:**
 ```
 Lav et søjlediagram der viser månedligt salg.
 Tilføj trendlinje.
@@ -164,7 +163,6 @@ ChatGPT:
 
 ## Filkonvertering
 
-**Copyable:**
 ```
 Konverter denne Excel-fil til CSV med semikolon som separator.
 Fjern tomme rækker.
@@ -231,7 +229,6 @@ Arbejd hurtigere med disse genveje:
 
 Bed ChatGPT:
 
-**Copyable:**
 ```
 Opsummer dette dokument i 5 punkter.
 Fremhæv vigtigste tal.
@@ -240,7 +237,6 @@ Find eventuelle fejl eller manglende information.
 
 **Del 2 (5 min):** Prøv browsing-funktionen:
 
-**Copyable:**
 ```
 Søg efter de nyeste anmeldelser af [produkt du overvejer at købe].
 Find 3 anmeldelser fra danske kilder.
@@ -249,7 +245,6 @@ Opsummer fordele og ulemper i tabel.
 
 **Del 3 (5 min):** Hvis du har data i CSV eller Excel, prøv Code Interpreter:
 
-**Copyable:**
 ```
 Analysér denne fil.
 Vis gennemsnit, median, og højeste/laveste værdi.

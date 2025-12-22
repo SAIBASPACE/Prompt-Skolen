@@ -56,7 +56,6 @@ Du har et ark med salgsdata:
 
 **Prompt:**
 
-**Copyable:**
 ```
 Analysér dette salgsdata.
 
@@ -138,7 +137,6 @@ En kunde skriver:
 
 **Prompt:**
 
-**Copyable:**
 ```
 Skriv svar til denne email.
 
@@ -219,7 +217,6 @@ Efter et 45 min projektmøde med 6 deltagere:
 
 **Prompt:**
 
-**Copyable:**
 ```
 Opsummer dette projektmøde.
 
@@ -299,7 +296,6 @@ Med Copilot i Microsoft 365 sparer du:
 
 Åbn et Excel-ark med data (eller lav dummy-data). Konverter til tabel med Ctrl+T.
 
-**Copyable:**
 ```
 Analysér disse data.
 Find gennemsnit, højeste og laveste værdi.
@@ -310,7 +306,6 @@ Lav et diagram der viser fordelingen.
 
 Find en email i din indbakke. Brug Copilot:
 
-**Copyable:**
 ```
 Skriv et professionelt svar.
 Bekræft jeg har modtaget beskeden.
@@ -322,7 +317,6 @@ Max 60 ord.
 
 Find et nyligt Teams-møde med transkription. Bed Copilot:
 
-**Copyable:**
 ```
 Opsummer mødet.
 List beslutninger og action items.

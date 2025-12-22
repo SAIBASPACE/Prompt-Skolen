@@ -58,23 +58,33 @@ Med Plus får du:
 
 ---
 
-## Sammenligning
+## Eksempel der virker
+
+**Med hukommelse (Plus):**
+
+ChatGPT husker din kontekst fra tidligere samtaler. Du skriver:
 
 ```
 Skriv en opfølgningsmail til en kunde vi mødtes med i går
 ```
 
-```
-Husk: Jeg hedder Lars, arbejder som salgschef hos TechPro.
-Vi bruger HubSpot som CRM og har 15 ansatte.
-Vores tone er professionel men afslappet.
+**Resultat:** Mail i din virksomheds tone, klar til at sende (fordi ChatGPT husker hvem du er, hvilken virksomhed, og jeres tone).
 
+---
+
+## Eksempel der fejler
+
+**Uden hukommelse (gratis):**
+
+```
 Skriv en opfølgningsmail til en kunde vi mødtes med i går
 ```
 
-**Resultat uden hukommelse (gratis):** Generisk mail du skal tilpasse manuelt.
-
-**Resultat med hukommelse (Plus):** Mail i din virksomheds tone, klar til at sende.
+**Hvorfor det fejler:**
+- ChatGPT kender ikke din virksomhed
+- Kender ikke din tone
+- Kender ikke hvem du er
+- Generisk mail du skal tilpasse manuelt
 
 ---
 
@@ -135,9 +145,10 @@ Skriv en opfølgningsmail til en kunde vi mødtes med i går
 
 **Gratis brugere:** Test ChatGPT gratis på en af dine almindelige opgaver. Noter hvad der virker og hvor du løber ind i begrænsninger.
 
-**Plus brugere:** Sæt hukommelse op med din arbejdskontekst:
+**Plus brugere:** Sæt hukommelse op med din arbejdskontekst.
 
-**Copyable:**
+I ChatGPT, skriv:
+
 ```
 Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
 Vi bruger [værktøjer] og har [antal] ansatte.

@@ -232,7 +232,6 @@ Format:
 
 Åbn et tomt Word-dokument. Brug Copilot til at skrive et udkast til:
 
-**Copyable:**
 ```
 Skriv en email om juleferie til dit team.
 
@@ -251,7 +250,6 @@ Sammenlign med hvad du selv ville skrive. Hvad skal justeres?
 
 Åbn PowerPoint. Brug Copilot til at lave en præsentation om et projekt du arbejder på:
 
-**Copyable:**
 ```
 Lav en præsentation om [projektnavn].
 
