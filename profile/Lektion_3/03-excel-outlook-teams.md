@@ -25,11 +25,7 @@ Copilot kan analysere data, lave formler og skabe visualiseringer.
 
 ---
 
-## Sammenligning
-
-```
-Lav en analyse
-```
+## Eksempel der virker
 
 ```
 Analysér salgsdata i kolonne B-D.
@@ -38,9 +34,21 @@ Beregn vækst fra januar til marts.
 Vis resultat som søjlediagram med trendlinje.
 ```
 
-**Dårlig prompt:** Copilot ved ikke hvilke kolonner, hvilken periode, eller hvad du vil se.
+**Resultat:** Copilot laver præcis den analyse du har brug for.
 
-**God prompt:** Copilot laver præcis den analyse du har brug for.
+---
+
+## Eksempel der fejler
+
+```
+Lav en analyse
+```
+
+**Hvorfor det fejler:**
+- Copilot ved ikke hvilke kolonner
+- Ingen angivelse af periode
+- Ingen instruktion om hvad du vil se
+- Resultat: Generisk analyse der ikke passer
 
 ---
 
@@ -109,11 +117,7 @@ Spar tid på email-håndtering - især når du skal gennem mange beskeder efter 
 
 ---
 
-## Sammenligning
-
-```
-Svar på emailen
-```
+## Eksempel der virker
 
 ```
 Skriv svar til denne email.
@@ -124,9 +128,21 @@ Tilføj: Bed om dagsorden på forhånd
 Længde: Max 50 ord
 ```
 
-**Dårlig prompt:** Du får et generisk svar uden din tone eller de specifikke punkter.
+**Resultat:** Email i din stil, klar til at sende med ét klik.
 
-**God prompt:** Email i din stil, klar til at sende med ét klik.
+---
+
+## Eksempel der fejler
+
+```
+Svar på emailen
+```
+
+**Hvorfor det fejler:**
+- Ingen tone-angivelse
+- Ingen specifikke punkter til at inkludere
+- Ingen instruktion om længde
+- Resultat: Generisk svar du skal omskrive
 
 ---
 
@@ -192,11 +208,7 @@ Copilot kan opsummere møder, finde information i chat og generere opfølgninger
 
 ---
 
-## Sammenligning
-
-```
-Opsummer mødet
-```
+## Eksempel der virker
 
 ```
 Opsummer mødet i 5 punkter.
@@ -205,9 +217,21 @@ Angiv hvem der er ansvarlig for hver action.
 Format: Klar til at kopiere ind i projektdokument.
 ```
 
-**Dårlig prompt:** Lang opsummering du skal sortere manuelt.
+**Resultat:** Struktureret output klar til at dele med teamet.
 
-**God prompt:** Struktureret output klar til at dele med teamet.
+---
+
+## Eksempel der fejler
+
+```
+Opsummer mødet
+```
+
+**Hvorfor det fejler:**
+- Ingen instruktion om format
+- Ingen angivelse af længde
+- Mangler fokus på beslutninger og action items
+- Resultat: Lang opsummering du skal sortere manuelt
 
 ---
 

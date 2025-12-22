@@ -59,11 +59,7 @@ For at få gode resultater med Copilot i Office, brug SIKT-modellen:
 
 ---
 
-## Sammenligning
-
-```
-Lav en præsentation om Q3
-```
+## Eksempel der virker
 
 ```
 Lav en præsentation om vores Q3-resultater.
@@ -78,9 +74,20 @@ Antal slides: 6-8
 Inkluder: Grafer hvor relevant
 ```
 
-**Dårlig prompt:** Copilot opfinder tal og indhold. Du bruger mere tid på at rette end du sparede.
+**Resultat:** Copilot laver struktur og layout med korrekte data. Klar til at præsentere.
 
-**God prompt:** Copilot laver struktur og layout med korrekte data.
+---
+
+## Eksempel der fejler
+
+```
+Lav en præsentation om Q3
+```
+
+**Hvorfor det fejler:**
+- Copilot opfinder tal fordi du ikke giver dem
+- Ingen instruktion om stil eller længde
+- Resultat: Du bruger mere tid på at rette end du sparede
 
 ---
 

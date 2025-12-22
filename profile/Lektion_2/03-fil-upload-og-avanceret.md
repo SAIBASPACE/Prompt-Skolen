@@ -26,11 +26,9 @@ Upload en PDF, Word-fil, eller Excel-ark. Bed ChatGPT om at opsummere, finde nø
 
 ---
 
-## Sammenligning
+## Eksempel der virker
 
-```
-Opsummer mit dokument
-```
+Upload et dokument og skriv:
 
 ```
 Opsummer dette dokument i 5 bullet points.
@@ -38,9 +36,20 @@ Fremhæv de vigtigste tal og konklusioner.
 Format: Hvert punkt max 20 ord.
 ```
 
-**Uden struktur:** Lang opsummering du skal sortere selv.
+**Resultat:** Præcis det format du har brug for, klar til at bruge.
 
-**Med struktur:** Præcis det format du har brug for.
+---
+
+## Eksempel der fejler
+
+```
+Opsummer mit dokument
+```
+
+**Hvorfor det fejler:**
+- Ingen instruktion om format
+- Ingen angivelse af længde
+- Resultat: Lang opsummering du skal sortere og forkorte selv
 
 ---
 
@@ -111,11 +120,7 @@ Brug det til:
 
 ---
 
-## Sammenligning
-
-```
-Hvad koster en iPhone?
-```
+## Eksempel der virker
 
 ```
 Søg efter aktuelle priser på iPhone 15 Pro 256GB i Danmark.
@@ -124,9 +129,21 @@ Inkluder links og find bedste tilbud.
 Vis resultat som tabel.
 ```
 
-**Dårlig prompt:** Vag, ChatGPT ved ikke hvilken model eller hvor.
+**Resultat:** Tabel med priser fra de 3 butikker, links, og klar anbefaling.
 
-**God prompt:** Specifik model, butikker, og format.
+---
+
+## Eksempel der fejler
+
+```
+Hvad koster en iPhone?
+```
+
+**Hvorfor det fejler:**
+- Hvilken iPhone model?
+- I hvilke butikker?
+- Hvilket land/område?
+- ChatGPT gætter på en generisk model og giver vag prisindikation
 
 ---
 

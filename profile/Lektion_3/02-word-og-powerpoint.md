@@ -25,11 +25,7 @@ Det er som at have en kollega der skriver første udkast mens du fokuserer på a
 
 ---
 
-## Sammenligning
-
-```
-Skriv noget om en hjemmeside
-```
+## Eksempel der virker
 
 ```
 Skriv en projektbeskrivelse til en ny hjemmeside.
@@ -41,9 +37,21 @@ Tone: Professionel men jordnær
 Længde: 300-400 ord
 ```
 
-**Dårlig prompt:** Copilot ved ikke hvem kunden er, hvad målet er, eller hvilken tone du vil have.
+**Resultat:** Brugbart første udkast på 30 sekunder. Klar til at raffinere.
 
-**God prompt:** Copilot laver et brugbart første udkast på 30 sekunder.
+---
+
+## Eksempel der fejler
+
+```
+Skriv noget om en hjemmeside
+```
+
+**Hvorfor det fejler:**
+- Copilot ved ikke hvem kunden er
+- Kender ikke målet med projektet
+- Ingen instruktion om tone eller længde
+- Generisk output der ikke passer
 
 ---
 
@@ -105,11 +113,7 @@ Upload et Word-dokument eller skriv nøglepunkter - Copilot laver slides med des
 
 ---
 
-## Sammenligning
-
-```
-Lav en præsentation om Q3
-```
+## Eksempel der virker
 
 ```
 Lav en præsentation om vores Q3-resultater.
@@ -125,9 +129,20 @@ Antal slides: 6-8
 Inkluder: Grafer hvor relevant, konkret action plan til sidst
 ```
 
-**Dårlig prompt:** Copilot opfinder tal og indhold.
+**Resultat:** Struktur og layout med korrekte data. Klar til at præsentere.
 
-**God prompt:** Copilot laver struktur med korrekte data.
+---
+
+## Eksempel der fejler
+
+```
+Lav en præsentation om Q3
+```
+
+**Hvorfor det fejler:**
+- Copilot opfinder tal fordi du ikke giver dem
+- Ingen instruktion om stil eller længde
+- Resultat: Du bruger mere tid på at rette end du sparede
 
 ---
 
