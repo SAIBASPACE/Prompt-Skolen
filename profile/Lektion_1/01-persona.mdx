@@ -1,0 +1,111 @@
+---
+title: "Persona: Giv AI'en en rolle"
+timeEstimate: "5 minutter"
+worksIn: "Alle værktøjer (ChatGPT, Claude, Copilot, Gemini)"
+---
+
+# Persona: Giv AI'en en rolle
+
+**Tid at lære:** 5 minutter
+**Virker i:** Alle værktøjer (ChatGPT, Claude, Copilot, Gemini)
+
+---
+
+## Hvad er det?
+
+Du fortæller AI'en hvem den er, før du giver den en opgave.
+
+Ligesom du ville bede en revisor om skattehjælp (ikke en bartender), giver en persona AI'en den rigtige "ekspertise" at trække på.
+
+---
+
+## Hvorfor virker det?
+
+- **Rigtig tone:** En "HR-chef" skriver anderledes end en "sælger"
+- **Rigtige fagtermer:** En "controller" bruger regnskabssprog automatisk
+- **Færre hallucinationer:** AI'en holder sig inden for rollens ekspertise
+
+---
+
+<PromptComparison
+  badPrompt="Skriv et afslagsbrev til Thomas"
+  goodPrompt={`Du er HR-chef i en dansk mellemstor virksomhed med 50 ansatte.
+Du har 10 års erfaring og lægger vægt på at behandle kandidater respektfuldt.
+
+Skriv et afslagsbrev til en kandidat der søgte en stilling som projektleder.
+Vi valgte en anden med mere erfaring inden for byggebranchen.
+Kandidatens navn: Thomas Nielsen
+Tone: Professionel men varm. Vi vil gerne have han søger igen.`}
+  badExplanation="Ingen kontekst om virksomheden, ingen tone-angivelse, ingen grund til afslaget. AI'en gætter på alt → generisk output."
+  goodExplanation="Personligt brev med korrekt HR-sprog, ikke en kold standardskabelon."
+/>
+
+---
+
+## Personas du kan bruge i morgen
+
+<ComparisonTable
+  columns={[
+    { header: "Din opgave" },
+    { header: "Persona" }
+  ]}
+  rows={[
+    {
+      label: "Kundeklage",
+      values: ["Erfaren kundeservicechef der prioriterer at beholde kunder"]
+    },
+    {
+      label: "Salgsmail",
+      values: ["B2B-sælger med 10 års erfaring i consultative selling"]
+    },
+    {
+      label: "Regnskabsforklaring",
+      values: ["Controller der forklarer tal til ikke-økonomer"]
+    },
+    {
+      label: "Kontrakt-review",
+      values: ["Juridisk assistent med fokus på risici for køber"]
+    },
+    {
+      label: "Teknisk dokumentation",
+      values: ["IT-supporter der skriver til ikke-tekniske brugere"]
+    },
+    {
+      label: "LinkedIn-opslag",
+      values: ["Marketing-ansvarlig i dansk SMV, autentisk tone"]
+    }
+  ]}
+/>
+
+---
+
+## Avanceret: Kombinér persona med begrænsninger
+
+<CopyablePrompt
+  prompt={`Du er erfaren dansk tekstforfatter med speciale i B2B-kommunikation.
+
+Begrænsninger:
+- Du skriver ALDRIG "I en verden hvor..." eller andre klichéer
+- Du bruger korte sætninger (max 15 ord)
+- Du undgår engelske buzzwords når der findes danske alternativer`}
+/>
+
+Dette fjerner det "AI-agtige" sprog mange klager over.
+
+---
+
+<ExerciseBox
+  title="Øvelse (2 minutter)"
+  steps={[
+    "Åbn ChatGPT, Claude eller Copilot",
+    "Indtast denne prompt uden persona: 'Skriv en mail om at vi hæver priserne 5%'",
+    "Indtast nu med persona: 'Du er salgsdirektør i en dansk produktionsvirksomhed. Du har langvarige kunderelationer og hader bullshit. Skriv en mail til eksisterende kunder om at vi hæver priserne 5% fra 1. februar. Grund: Øgede råvarepriser. Tone: Ærlig, direkte, ikke undskyldende. Max 100 ord.'"
+  ]}
+  hint="Sammenlign de to svar. Hvilket ville du sende til en kunde?"
+/>
+
+---
+
+## Næste lektion
+
+[02 - Kontekst →](./02-kontekst.md)
