@@ -1,0 +1,233 @@
+---
+title: "Word og PowerPoint"
+timeEstimate: "8 min"
+worksIn: "Microsoft 365 Copilot"
+---
+
+# Word og PowerPoint
+
+**Lektion 3: Microsoft Copilot / Teknik 2**
+**Tid:** 8 min
+
+---
+
+## TEKNIKKEN
+
+Copilot i Word og PowerPoint sparer tid på rapportskrivning og præsentationer - MEN kun hvis du giver præcise instruktioner.
+
+Uden instruktioner laver Copilot generisk output der tager længere tid at rette end at lave selv.
+
+---
+
+## Word Copilot
+
+### Hvad kan den?
+
+- Skriv dokumenter fra scratch
+- Opsummer lange dokumenter
+- Omskriv afsnit i anden tone
+- Foreslå forbedringer
+- Find information hurtigt
+
+### Aktivér Copilot i Word
+
+1. Åbn et Word-dokument
+2. Klik på **Copilot-ikonet** (øverst til højre)
+3. Skriv din prompt
+
+---
+
+<PromptComparison
+  badPrompt="Skriv en rapport om Q3"
+  goodPrompt={`Skriv en intern rapport om Q3-resultater.
+
+Målgruppe: Ledelsen (ikke-teknisk)
+Længde: 2-3 sider
+
+Struktur:
+1. Executive Summary (3-4 sætninger)
+2. Nøgletal (tabel)
+3. Succeshistorier (bullets)
+4. Udfordringer (bullets)
+5. Anbefalinger til Q4
+
+Tone: Professionel, konkret, ingen buzzwords
+Data: [Indsæt dine faktiske tal her]`}
+  badExplanation="Copilot opfinder data og struktur. Du får et dokument der er 80% forkert."
+  goodExplanation="Copilot følger din struktur og bruger dine tal. Klar til gennemlæsning, ikke total omskrivning."
+/>
+
+---
+
+## PowerPoint Copilot
+
+### Hvad kan den?
+
+- Lav præsentation fra scratch
+- Lav slides fra Word-dokument
+- Opsummer lange præsentationer
+- Forbedr design og layout
+- Tilføj billeder automatisk
+
+---
+
+<PromptComparison
+  badPrompt="Lav en præsentation om Q3"
+  goodPrompt={`Lav en præsentation om vores Q3-resultater.
+
+Indhold:
+- Omsætning: 12.4 mio (op 15%)
+- Nye kunder: 47
+- Største succes: Premium-serien (67% af vækst)
+- Største udfordring: Kun 45% markedsandel i Jylland
+
+Stil: Professionel, minimal tekst
+Antal slides: 6-8
+Design: Brug vores virksomheds farveskema (blå/grå)
+Grafer: Vis omsætning og nye kunder som søjlediagram`}
+  badExplanation="Copilot opfinder tal fordi du ikke giver dem. Ingen instruktion om stil eller længde. Resultat: Du bruger mere tid på at rette end du sparede."
+  goodExplanation="Struktur og layout med korrekte data. Klar til at præsentere."
+/>
+
+---
+
+## Word - Nyttige prompts
+
+### Skriv dokument fra scratch
+
+<CopyablePrompt
+  title="Rapport fra scratch"
+  prompt={`Skriv et dokument om [EMNE].
+
+Målgruppe: [Hvem skal læse det?]
+Formål: [Hvorfor skrives det?]
+Længde: [Antal sider]
+Tone: [Beskrivelse]
+
+Struktur:
+1. [Sektion 1]
+2. [Sektion 2]
+3. [Sektion 3]
+
+Inkluder: [Data, eksempler, statistik]`}
+/>
+
+### Opsummer langt dokument
+
+<CopyablePrompt
+  title="Opsummering"
+  prompt={`Opsummer dette dokument:
+- Max 1 side
+- Fremhæv vigtigste beslutninger
+- Inkluder nøgletal i tabel
+- Format: Bullets hvor muligt`}
+/>
+
+### Omskriv tone
+
+<CopyablePrompt
+  title="Tone ændring"
+  prompt={`Omskriv dette afsnit:
+Fra: [Nuværende tone]
+Til: [Ny tone]
+Behold længden cirka som den er`}
+/>
+
+---
+
+## PowerPoint - Nyttige prompts
+
+### Lav præsentation fra Word-dokument
+
+<CopyablePrompt
+  title="Fra Word til PowerPoint"
+  prompt={`Lav en præsentation baseret på dette Word-dokument.
+
+Antal slides: 8-10
+Design: Minimal, professionel
+Tekst per slide: Max 3-4 bullets
+Tilføj relevante ikoner og billeder hvor muligt`}
+/>
+
+### Forbedr eksisterende præsentation
+
+<CopyablePrompt
+  title="Forbedr design"
+  prompt={`Gennemgå denne præsentation:
+- Reducer tekst til max 3-4 bullets per slide
+- Tilføj billeder hvor relevant
+- Sørg for konsistent design
+- Foreslå hvor grafer ville være bedre end tekst`}
+/>
+
+### Tilpas til målgruppe
+
+<CopyablePrompt
+  title="Tilpas præsentation"
+  prompt={`Tilpas denne præsentation til [MÅLGRUPPE].
+
+Nuværende: Teknisk præsentation til udviklere
+Ny målgruppe: Ledelsen (ikke-teknisk)
+
+Fjern: Teknisk jargon
+Tilføj: Business-impact og ROI
+Fokus: Fordele, ikke implementering`}
+/>
+
+---
+
+## Sådan får du bedre output
+
+### 1. Giv altid data
+
+✗ **Dårligt:** "Lav en rapport om vores salg"
+✓ **Godt:** "Lav en rapport. Q3 salg: 12.4 mio (+15%). Top produkt: Premium-serien (2.4 mio)"
+
+### 2. Specificér struktur
+
+✗ **Dårligt:** "Skriv om vores produkt"
+✓ **Godt:** "Skriv om vores produkt. Struktur: 1) Hvad er det, 2) Fordele, 3) Pris, 4) Hvordan køber man"
+
+### 3. Definer længde
+
+✗ **Dårligt:** "Opsummer dette"
+✓ **Godt:** "Opsummer i max 1 side, 5 bullets, hvert max 15 ord"
+
+### 4. Angiv tone
+
+✗ **Dårligt:** "Skriv godt"
+✓ **Godt:** "Tone: Professionel men jordnær. Undgå buzzwords. Max 15 ord per sætning"
+
+---
+
+## Begrænsninger
+
+<Callout type="warning">
+**Word Copilot:**
+- Kan ikke læse billeder i dokumenter
+- Mangler kontekst fra andre filer (medmindre du kopierer det ind)
+- Opsummeringer kan misse nuancer
+
+**PowerPoint Copilot:**
+- Opfinder fakta hvis du ikke giver dem
+- Design-valg er ikke altid passende til din virksomhed
+- Tjek ALTID tal og grafer manuelt
+</Callout>
+
+---
+
+<ExerciseBox
+  title="Øvelse (10 minutter)"
+  description="Test Copilot i Word eller PowerPoint:"
+  steps={[
+    "Word: Åbn et dokument og bed Copilot opsummere det i 5 bullets. Sammenlign med din egen opsummering.",
+    "PowerPoint: Bed Copilot lave 3 slides om et projekt du arbejder på. Giv præcise data og instruktioner. Observer hvad den gør godt og hvad du skal rette."
+  ]}
+  hint="Læg mærke til: Jo mere præcis din prompt, jo mindre skal du rette bagefter."
+/>
+
+---
+
+## Næste lektion
+
+[03 - Excel, Outlook og Teams →](./03-excel-outlook-teams.md)

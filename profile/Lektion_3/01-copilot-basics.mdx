@@ -1,0 +1,184 @@
+---
+title: "Microsoft Copilot: Basics"
+timeEstimate: "6 min"
+worksIn: "Microsoft Copilot (gratis + Microsoft 365)"
+---
+
+# Microsoft Copilot: Basics
+
+**Lektion 3: Microsoft Copilot / Teknik 1**
+**Tid:** 6 min
+
+---
+
+## TEKNIKKEN
+
+Microsoft Copilot er AI integreret direkte i Word, Excel, Outlook, Teams og PowerPoint.
+
+Hvis din virksomhed bruger Microsoft 365, er Copilot den nemmeste vej til AI i hverdagen - du skal ikke skifte værktøj.
+
+---
+
+## Gratis vs Microsoft 365
+
+<ComparisonTable
+  columns={[
+    { header: "Feature" },
+    { header: "Gratis (copilot.microsoft.com)" },
+    { header: "Microsoft 365" }
+  ]}
+  rows={[
+    { label: "Chat", values: [true, true] },
+    { label: "Billeder (DALL-E)", values: [true, true] },
+    { label: "Word integration", values: [false, true] },
+    { label: "Excel integration", values: [false, true] },
+    { label: "Outlook integration", values: [false, true] },
+    { label: "Teams integration", values: [false, true] },
+    { label: "PowerPoint integration", values: [false, true] }
+  ]}
+/>
+
+**Gratis version** fungerer som selvstændig chatbot - lignende ChatGPT.
+
+**Microsoft 365 Copilot** koster ekstra (ca. 280 kr/md per bruger) og kræver Microsoft 365 Business Standard eller højere.
+
+---
+
+## Hvornår Copilot vs andre værktøjer?
+
+<ComparisonTable
+  columns={[
+    { header: "Brug" },
+    { header: "Copilot" },
+    { header: "Bedre alternativ" }
+  ]}
+  rows={[
+    { label: "Office-dokumenter", values: [true, "-"] },
+    { label: "Mødeopsamling (Teams)", values: [true, "Otter.ai (hvis ikke M365)"] },
+    { label: "Generel chat", values: ["Ja", "ChatGPT (bedre)"] },
+    { label: "Kode", values: [false, "GitHub Copilot"] },
+    { label: "Research", values: [false, "Perplexity"] },
+    { label: "Lange dokumenter", values: ["Word", "Claude (bedre kontekst)"] }
+  ]}
+/>
+
+**Brug Copilot hvis:** Du arbejder primært i Microsoft Office.
+
+**Brug ChatGPT/Claude hvis:** Du ikke har Microsoft 365 eller vil have bedre chat-funktionalitet.
+
+---
+
+## SIKT Framework til Copilot
+
+For at få gode resultater med Copilot i Office, brug SIKT-modellen:
+
+<ConceptCard
+  title="SIKT Framework"
+  items={[
+    {
+      letter: "S",
+      title: "Specificér app",
+      description: "Hvilken app (Word, Excel, Outlook, Teams, PowerPoint)"
+    },
+    {
+      letter: "I",
+      title: "Instruktion",
+      description: "Hvad skal Copilot gøre præcist"
+    },
+    {
+      letter: "K",
+      title: "Kontekst",
+      description: "Baggrund, data, situation"
+    },
+    {
+      letter: "T",
+      title: "Tone og format",
+      description: "Stil, længde, struktur"
+    }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Lav en præsentation om Q3"
+  goodPrompt={`Lav en præsentation om vores Q3-resultater.
+
+Indhold:
+- Omsætning: 12.4 mio (op 15%)
+- Nye kunder: 47
+- Største udfordring: leveringstider
+
+Stil: Professionel, minimal
+Antal slides: 6-8
+Inkluder: Grafer hvor relevant`}
+  badExplanation="Copilot opfinder tal fordi du ikke giver dem. Ingen instruktion om stil eller længde. Resultat: Du bruger mere tid på at rette end du sparede."
+  goodExplanation="Copilot laver struktur og layout med korrekte data. Klar til at præsentere."
+/>
+
+---
+
+## Sådan starter du med Copilot
+
+### I gratis version
+
+1. Gå til **copilot.microsoft.com**
+2. Log ind med din Microsoft-konto
+3. Brug det som en chatbot (lignende ChatGPT)
+
+### I Microsoft 365
+
+1. Åbn Word, Excel, Outlook, Teams eller PowerPoint
+2. Klik på **Copilot-ikonet** (øverst til højre eller i menu)
+3. Skriv din prompt i Copilot-panelet
+
+---
+
+## Gevinster ved Copilot
+
+Med Copilot i Microsoft 365 får du:
+
+- **5 min** sparet per mødeopsamling (Teams)
+- **10 min** sparet per rapport (Word)
+- **80%** hurtigere email-svar (Outlook)
+- **15 min** sparet på dataanalyse (Excel)
+
+<Callout type="info">
+**Vigtigt:** Copilot er bedst når du allerede arbejder i Microsoft 365. Skift ikke workflow bare for at bruge Copilot.
+</Callout>
+
+---
+
+## Begrænsninger
+
+<ComparisonTable
+  columns={[
+    { header: "Begrænsning" },
+    { header: "Workaround" }
+  ]}
+  rows={[
+    { label: "Kræver Microsoft 365 licens", values: ["Brug gratis version til simpel chat"] },
+    { label: "Excel kræver tabelformat", values: ["Konverter data med Ctrl+T først"] },
+    { label: "PowerPoint opfinder fakta", values: ["Tjek alle tal manuelt"] },
+    { label: "Teams kræver transkription", values: ["Slå transkription til før møder"] },
+    { label: "Kan ikke læse password-beskyttede filer", values: ["Fjern beskyttelse midlertidigt"] }
+  ]}
+/>
+
+---
+
+<ExerciseBox
+  title="Øvelse (3 minutter)"
+  description="Test Copilot i gratis version eller Microsoft 365:"
+  steps={[
+    "Gratis version: Gå til copilot.microsoft.com og test: 'Skriv en email til en kunde der spørger om leveringstid. Svar: Vi sender i morgen, levering onsdag. Tone: Professionel men venlig. Max 60 ord.'",
+    "Sammenlign svaret med ChatGPT hvis du har adgang. Hvad er forskellen?",
+    "Microsoft 365: Åbn et Office-program du bruger dagligt og find Copilot-ikonet. Eksperimentér med at stille et spørgsmål."
+  ]}
+/>
+
+---
+
+## Næste lektion
+
+[02 - Word og PowerPoint →](./02-word-og-powerpoint.md)

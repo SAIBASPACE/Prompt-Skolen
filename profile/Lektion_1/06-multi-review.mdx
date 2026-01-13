@@ -1,0 +1,171 @@
+---
+title: "Multi-review: Få AI'en til at tjekke sig selv"
+timeEstimate: "5 min"
+worksIn: "Alle værktøjer"
+---
+
+# Multi-review: Få AI'en til at tjekke sig selv
+
+**Lektion 1: Basics / Teknik 6**
+**Tid:** 5 min
+
+---
+
+## TEKNIKKEN
+
+Du beder AI'en:
+1. Lave et udkast
+2. Kritisere sit eget udkast
+3. Lave en forbedret version
+
+Det er som at have en kollega der læser korrektur - bare gratis og på 10 sekunder.
+
+AI'er laver fejl i første forsøg, men er gode til at finde fejl når de leder.
+
+Ved at splitte opgaven i "skriv" og "kritisér" får du:
+- Færre fejl
+- Bedre struktur
+- Output der er tættere på klar-til-brug
+
+---
+
+<PromptComparison
+  badPrompt="Skriv et godt svar til en kunde der klager over forsinkelse."
+  goodPrompt={`Trin 1: Skriv et svar til denne kundeklage:
+"Jeg har ventet 3 uger på min ordre. Det er fuldstændig uacceptabelt.
+Jeg vil have pengene retur."
+
+Trin 2: Gennemgå dit eget svar kritisk:
+- Er tonen for undskyldende eller for defensiv?
+- Mangler der konkret handling?
+- Er der noget der kan misforstås?
+
+Trin 3: Skriv en forbedret version baseret på din kritik.`}
+  badExplanation="AI'ens første indskydelse. Ofte for langt, for formelt, eller mangler konkret handling."
+  goodExplanation="Et gennemarbejdet svar, ikke et første udkast."
+/>
+
+---
+
+## 4 review-typer du kan bruge
+
+### 1. Generel kvalitetskontrol
+
+<CopyablePrompt
+  title="Generel review"
+  prompt={`[Dit output]
+
+Gennemgå nu dit svar:
+- Hvad er den største svaghed?
+- Hvad ville en kritisk læser påpege?
+- Skriv en forbedret version.`}
+/>
+
+### 2. Målgruppe-review
+
+<CopyablePrompt
+  title="Målgruppe-fokuseret review"
+  prompt={`[Dit output]
+
+Læs dette som om du er [MÅLGRUPPE].
+- Hvad ville forvirre dem?
+- Hvad ville de mangle?
+- Hvad ville de springe over?
+Tilpas teksten baseret på dette.`}
+/>
+
+### 3. Fakta-tjek
+
+<CopyablePrompt
+  title="Fakta-tjek review"
+  prompt={`[Dit output]
+
+Gennemgå hvert faktuelt udsagn i teksten:
+- Marker usikre påstande med [TJEK]
+- Marker potentielt forældede tal med [OPDATER]
+- Giv mig listen så jeg kan verificere manuelt.`}
+/>
+
+### 4. Tone-review
+
+<CopyablePrompt
+  title="Tone review"
+  prompt={`[Dit output]
+
+Vurdér tonen:
+- For formel / for uformel?
+- For sælgende / for defensiv?
+- For langt / for kort?
+Tilpas til [ØNSKET TONE].`}
+/>
+
+---
+
+## One-shot multi-review
+
+Du kan gøre det i én prompt:
+
+<CopyablePrompt
+  title="Alt-i-en review"
+  prompt={`Skriv en LinkedIn-anbefaling af min kollega Peter, der skifter job.
+Vi har arbejdet sammen i 3 år på IT-projekter. Han er god til at holde ro i kaos.
+
+Når du har skrevet udkastet:
+1. Kritisér det: Er det for generisk? For overdrevent?
+2. Skriv en forbedret version der føles ægte.`}
+/>
+
+---
+
+## Avanceret: Devil's Advocate review
+
+Bed AI'en angribe sin egen konklusion:
+
+<CopyablePrompt
+  title="Devil's Advocate"
+  prompt={`Du har lige anbefalet at vi vælger leverandør A.
+
+Skift nu perspektiv: Du er advokat for leverandør B.
+Giv 3 grunde til at vores analyse er forkert.
+
+Baseret på denne kritik: Holder anbefalingen stadig?`}
+/>
+
+---
+
+## Hvornår skal du bruge multi-review?
+
+<ComparisonTable
+  columns={[
+    { header: "Situation" },
+    { header: "Brug multi-review?" }
+  ]}
+  rows={[
+    { label: "Ekstern kommunikation (kunder, presse)", values: ["Ja"] },
+    { label: "Vigtige interne dokumenter", values: ["Ja"] },
+    { label: "Hurtige interne noter", values: ["Nej"] },
+    { label: "Brainstorm/idégenerering", values: ["Nej"] },
+    { label: "Analyse med konsekvenser", values: ["Ja"] }
+  ]}
+/>
+
+<Callout type="tip">
+**Tommelfingerregel:** Hvis du normalt ville bede en kollega læse det igennem, så brug multi-review.
+</Callout>
+
+---
+
+<ExerciseBox
+  title="Øvelse (5 minutter)"
+  steps={[
+    "Del 1: Brug denne simple prompt: 'Skriv en kort præsentation af vores virksomhed til en potentiel samarbejdspartner. Vi er en dansk IT-konsulentvirksomhed med 20 ansatte, speciale i Microsoft-løsninger.'",
+    "Del 2: Brug denne multi-review prompt: 'Skriv en kort præsentation af vores virksomhed til en potentiel samarbejdspartner. Vi er en dansk IT-konsulentvirksomhed med 20 ansatte, speciale i Microsoft-løsninger. Når du har skrevet: 1) Kritisér teksten: Hvad lyder generisk? Hvad mangler vi? 2) Hvad ville få os til at skille os ud fra 100 andre IT-konsulenter? 3) Skriv en forbedret version der er mere specifik og interessant.'"
+  ]}
+  hint="Sammenlign de to resultater."
+/>
+
+---
+
+## Næste lektion
+
+[07 - Flipped Interaction (lad AI'en spørge) →](./07-flipped-interaction.md)

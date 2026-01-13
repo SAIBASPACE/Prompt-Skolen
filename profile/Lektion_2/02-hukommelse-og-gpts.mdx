@@ -1,0 +1,238 @@
+---
+title: "Hukommelse og Custom GPTs"
+timeEstimate: "10 min"
+worksIn: "ChatGPT Plus"
+---
+
+# Hukommelse og Custom GPTs
+
+**Lektion 2: ChatGPT / Teknik 2**
+**Tid:** 10 min
+
+---
+
+## TEKNIKKEN
+
+ChatGPT Plus kan huske information mellem samtaler.
+
+I stedet for at skrive "Jeg arbejder som HR-chef hos TechPro med 50 ansatte" hver gang, skriver du det én gang. ChatGPT husker det i alle fremtidige samtaler.
+
+Uden hukommelse gentager du kontekst i hver prompt:
+- Hvem du er
+- Din virksomhed
+- Jeres tone
+- Værktøjer I bruger
+
+Med hukommelse skriver du kun opgaven. ChatGPT kender allerede konteksten.
+
+**Resultat:** 30-60 sekunder sparet per prompt.
+
+---
+
+## Sådan sætter du hukommelse op
+
+<CopyablePrompt
+  title="Setup hukommelse"
+  prompt={`Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma].
+Vi sælger [produkt/ydelse] til [målgruppe].
+Vi har [antal] ansatte og bruger [værktøj] som CRM.
+Vores tone er [beskrivelse] - ingen buzzwords.`}
+/>
+
+ChatGPT svarer: "Jeg har gemt det. Jeg vil huske det til næste gang."
+
+---
+
+## Tjek og opdater hukommelse
+
+**Tjek hvad ChatGPT husker:**
+
+<CopyablePrompt
+  prompt="Hvad husker du om mig?"
+/>
+
+**Opdater hukommelse:**
+
+<CopyablePrompt
+  prompt={`Husk også: Vi lancerede nyt produkt "[navn]" i [måned] [år].
+Det [unik værdi/fordel] sammenlignet med [alternativ].`}
+/>
+
+<CopyablePrompt
+  prompt="Opdater: Vi har nu [nyt antal] ansatte (ikke [gammelt antal])."
+/>
+
+**Slet hukommelse:**
+
+<CopyablePrompt
+  prompt="Glem alt om mig"
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Skriv en LinkedIn-post om vores nye produkt"
+  goodPrompt="Skriv en LinkedIn-post om vores nye produkt"
+  badExplanation="Uden hukommelse: Du skal gentage al kontekst i hver prompt. ChatGPT ved ikke hvilket produkt, kender ikke din tone eller virksomhed. Generisk output der ikke passer."
+  goodExplanation="Med hukommelse: ChatGPT skriver i din tone fordi den husker: Du arbejder hos GreenTech, sælger EcoPack, tone er professionel men jordnær."
+/>
+
+---
+
+## Hukommelse i praksis
+
+### Email-skrivning
+
+<CopyablePrompt
+  title="Email format setup (første gang)"
+  prompt={`Husk: Vi sender altid mødebekræftelser samme dag.
+Format: Bekræft dato/tid, vedhæft dagsorden, slut med "Glæder mig".
+Max 80 ord.`}
+/>
+
+**Fremover:**
+
+<CopyablePrompt
+  prompt="Skriv mødebekræftelse til [navn] - [dag] kl [tid]"
+/>
+
+ChatGPT bruger automatisk dit format.
+
+### Kunde-kommunikation
+
+<CopyablePrompt
+  title="Kundeservice retningslinjer"
+  prompt={`Husk: Vores standardsvar til kundeforespørgsler:
+- Bekræft modtagelse inden for [antal] timer
+- Giv konkret tidslinje for svar
+- Undgå "vi beklager ulejligheden" - vær proaktiv
+- Sign off: "Med venlig hilsen, [navn] - [titel]"`}
+/>
+
+---
+
+## Custom GPTs (kun Plus)
+
+Custom GPTs er specialiserede assistenter du kan bygge eller bruge.
+
+Tænk på dem som en kollega der er ekspert i præcis ét område.
+
+### Populære Custom GPTs
+
+<ComparisonTable
+  columns={[
+    { header: "GPT" },
+    { header: "Hvad den gør" }
+  ]}
+  rows={[
+    { label: "Consensus", values: ["Videnskabelig research med kilder fra artikler"] },
+    { label: "Canva", values: ["Design grafik direkte i ChatGPT"] },
+    { label: "Zapier", values: ["Forbind ChatGPT til dine værktøjer"] },
+    { label: "WebPilot", values: ["Avanceret web-søgning og analyse"] },
+    { label: "Code Tutor", values: ["Lær programmering med øvelser"] }
+  ]}
+/>
+
+Find dem under "Explore GPTs" i ChatGPT Plus.
+
+---
+
+## Byg din egen Custom GPT
+
+### Trin-for-trin guide
+
+**1. Klik "Create a GPT"** i ChatGPT Plus
+
+**2. Definer formål**
+
+<CopyablePrompt
+  prompt={`Dette er en skriveassistent til [Firma].
+Den skriver emails, opslag og dokumenter i vores tone.`}
+/>
+
+**3. Giv instruktioner**
+
+<CopyablePrompt
+  title="GPT instruktioner"
+  prompt={`Instruktioner:
+- Brug altid dansk (ingen engelske buzzwords)
+- Max 15 ord per sætning
+- Professionel men afslappet tone
+- Undgå "I en verden hvor..." og lignende klichéer
+- Sign off: "Mvh, [navn] - [titel]"`}
+/>
+
+**4. Upload viden**
+- Brand guidelines (PDF)
+- Gode eksempler på tekst
+- Produktbeskrivelser
+- FAQ dokument
+
+**5. Test og juster**
+
+Prøv forskellige prompts. Ret instruktionerne hvis output er forkert.
+
+---
+
+## Eksempel: Virksomheds-GPT
+
+<CopyablePrompt
+  title="Virksomheds GPT setup"
+  prompt={`Du er skriveassistent for [Firma], en dansk [branche] med [antal] ansatte.
+
+Regler:
+- Skriv altid på dansk
+- [Tone beskrivelse]
+- Max [antal] ord medmindre andet specificeres
+- Inkludér konkret handling i alle emails
+- Undgå: "Jeg håber denne email finder dig vel", buzzwords, klichéer
+
+Produkter:
+- [Produkt 1]
+- [Produkt 2]
+- [Produkt 3]
+
+Kunder:
+- [Målgruppe beskrivelse]
+- [Geografisk område]`}
+/>
+
+**Viden uploadet:**
+- Brand guide (PDF)
+- 10 gode email-eksempler
+- Produktbeskrivelser
+
+---
+
+## Hvornår skal du lave en Custom GPT?
+
+### Lav en GPT hvis:
+
+✓ **Du har samme type opgave gentagne gange** - Email-format, rapportskrivning
+✓ **Dit team skal bruge samme prompts** - Sikrer konsistens på tværs af medarbejdere
+✓ **Du har specifik viden** - Upload brand guide, produktinfo, processer
+✓ **Du vil dele med andre** - Kollegaer kan bruge din GPT uden at lære prompten
+
+### Brug standard ChatGPT hvis:
+
+○ **Engangsopgaver** - Ikke værd at bygge en GPT
+○ **Varierede opgaver** - Ingen gentagelse eller mønster
+○ **Simpel kontekst** - Hukommelse er nok
+
+---
+
+<ExerciseBox
+  title="Øvelse (10 minutter)"
+  description="Sæt hukommelse op og test den:"
+  steps={[
+    "Del 1 (5 min): Sæt hukommelse op med din arbejdskontekst: 'Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma]. Vi har [antal] ansatte og sælger [produkt/ydelse]. Værktøjer: [liste værktøjer]. Tone: [beskrivelse af tone]'",
+    "Del 2 (5 min): Test hukommelsen. Bed ChatGPT om en email uden at specificere firma eller tone. Tjek om den bruger din gemte kontekst."
+  ]}
+  hint="Bonus: Hvis du har tid, find en Custom GPT i 'Explore GPTs' der er relevant for dit arbejde. Test den."
+/>
+
+---
+
+## Næste lektion
+
+[03 - Fil-upload og Avanceret →](./03-fil-upload-og-avanceret.md)

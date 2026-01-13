@@ -1,0 +1,246 @@
+---
+title: "Excel, Outlook og Teams"
+timeEstimate: "10 min"
+worksIn: "Microsoft 365 Copilot"
+---
+
+# Excel, Outlook og Teams
+
+**Lektion 3: Microsoft Copilot / Teknik 3**
+**Tid:** 10 min
+
+---
+
+## Excel Copilot
+
+### Hvad kan den?
+
+- Analysér data og find trends
+- Lav formler fra naturligt sprog
+- Fremhæv vigtige datapunkter
+- Generer grafer og visualiseringer
+- Forudsig mønstre
+
+**Vigtigt:** Excel Copilot kræver at dine data er formateret som tabel (Ctrl+T).
+
+---
+
+## Excel - Nyttige prompts
+
+<ComparisonTable
+  columns={[
+    { header: "Opgave" },
+    { header: "Prompt" }
+  ]}
+  rows={[
+    { label: "Analysér data", values: ["Analysér salgsdata. Find top 3 produkter og vis månedlig vækst"] },
+    { label: "Lav formel", values: ["Beregn gennemsnitlig ordre-værdi per måned"] },
+    { label: "Fremhæv", values: ["Fremhæv alle rækker hvor salg er over 50.000 kr"] },
+    { label: "Visualiser", values: ["Lav søjlediagram af månedligt salg med trendlinje"] },
+    { label: "Forudsig", values: ["Projektér salg for næste kvartal baseret på trend"] }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Lav en analyse"
+  goodPrompt={`Analysér salgsdata i kolonne B-D.
+Find top 3 produkter efter omsætning.
+Beregn vækst fra januar til marts.
+Vis resultat som søjlediagram med trendlinje.`}
+  badExplanation="Copilot ved ikke hvilke kolonner, ingen angivelse af periode, ingen instruktion om hvad du vil se. Resultat: Generisk analyse der ikke passer."
+  goodExplanation="Copilot laver præcis den analyse du har brug for."
+/>
+
+---
+
+## Outlook Copilot
+
+### Hvad kan den?
+
+- Skriv email-svar baseret på tråden
+- Opsummer lange email-tråde
+- Træk handling ud af emails
+- Foreslå mødetider
+- Tidsbesparelse på rutine-emails
+
+---
+
+## Outlook - Nyttige prompts
+
+<ComparisonTable
+  columns={[
+    { header: "Opgave" },
+    { header: "Prompt" }
+  ]}
+  rows={[
+    { label: "Svar", values: ["Skriv svar: Bekræft møde tirsdag kl 14. Bed om dagsorden. Tone: venlig. Max 50 ord"] },
+    { label: "Opsummer tråd", values: ["Opsummer denne email-tråd i 3 bullets: Hvad vil kunden? Hvad har vi svaret? Hvad mangler?"] },
+    { label: "Find handling", values: ["Hvilke handlinger skal jeg tage baseret på denne email?"] },
+    { label: "Kategoriser", values: ["Er dette hastende? Skal jeg svare i dag eller kan det vente til i morgen?"] },
+    { label: "Tidsbesparelse", values: ["Opsummér alle ulæste emails fra i dag"] }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Svar på emailen"
+  goodPrompt={`Skriv svar til denne email.
+
+Tone: Venlig men professionel
+Svar: Ja til mødet tirsdag kl 14
+Tilføj: Bed om dagsorden på forhånd
+Længde: Max 50 ord`}
+  badExplanation="Ingen tone-angivelse, ingen specifikke punkter til at inkludere, ingen instruktion om længde. Resultat: Generisk svar du skal omskrive."
+  goodExplanation="Email i din stil, klar til at sende med ét klik."
+/>
+
+---
+
+## Teams Copilot
+
+### Hvad kan den?
+
+- Opsummer møder (kræver transkription slået til)
+- Find vigtige punkter fra chat
+- Foreslå action items
+- Catch up på beskeder du missede
+- Generer mødedagsorden
+
+**Vigtigt:** Slå transkription til i Teams før møder for at bruge Copilot på mødeopsummering.
+
+---
+
+## Teams - Nyttige prompts
+
+<ComparisonTable
+  columns={[
+    { header: "Opgave" },
+    { header: "Prompt" }
+  ]}
+  rows={[
+    { label: "Opsummer møde", values: ["Opsummer mødet i 5 punkter. Fremhæv beslutninger og action items"] },
+    { label: "Find beslutning", values: ["Hvad besluttede vi om budgettet?"] },
+    { label: "Action items", values: ["List alle action items fra mødet med ansvarlige og deadlines"] },
+    { label: "Forbered møde", values: ["Opsummer chatten de sidste 7 dage så jeg er opdateret til mødet"] },
+    { label: "Catch up", values: ["Hvad skete der i chatten mens jeg var væk?"] }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Opsummer mødet"
+  goodPrompt={`Opsummer mødet i 5 punkter.
+Fremhæv beslutninger og action items.
+Angiv hvem der er ansvarlig for hver action.
+Format: Klar til at kopiere ind i projektdokument.`}
+  badExplanation="Ingen instruktion om format, ingen angivelse af længde, mangler fokus på beslutninger og action items. Resultat: Lang opsummering du skal sortere manuelt."
+  goodExplanation="Struktureret output klar til at dele med teamet."
+/>
+
+---
+
+## Sådan får du bedre output på tværs af apps
+
+### 1. Vær specifik om format
+
+<CopyablePrompt
+  prompt={`Output som:
+- Bullets (max 5)
+- Tabel med kolonner: [X, Y, Z]
+- Email-format
+- Max X ord`}
+/>
+
+### 2. Giv kontekst
+
+<CopyablePrompt
+  prompt={`Baggrund: [Hvad skal Copilot vide?]
+Data: [Konkrete tal]
+Målgruppe: [Hvem skal bruge output?]`}
+/>
+
+### 3. Definer tone
+
+<CopyablePrompt
+  prompt={`Tone: [Professionel/afslappet/direkte/etc.]
+Undgå: [Buzzwords, klichéer, etc.]
+Max ord per sætning: [Antal]`}
+/>
+
+---
+
+## Begrænsninger og Workarounds
+
+<Callout type="warning">
+**Excel Copilot:**
+- Kræver data som tabel (Ctrl+T først)
+- Kan ikke håndtere meget komplekse formler
+- Tjek altid beregninger manuelt
+</Callout>
+
+<Callout type="warning">
+**Outlook Copilot:**
+- Mangler kontekst fra tidligere emails ikke i tråden
+- Kan misforstå sarkasme eller humor
+- Tjek altid tone før afsendelse
+</Callout>
+
+<Callout type="warning">
+**Teams Copilot:**
+- Kræver transkription slået til for møder
+- Kan misse vigtige pointer hvis folk taler i munden på hinanden
+- Recap er kun så god som transkriptionen
+</Callout>
+
+---
+
+## Hvornår er Copilot værd at bruge?
+
+### Brug Copilot til:
+
+✓ Rutine-opgaver du laver ofte (email-svar, opsummeringer)
+✓ Tidsbesparende analyse (Excel data-trends)
+✓ Mødeopsamling (Teams recap)
+✓ Første udkast til dokumenter (Word/PowerPoint)
+
+### Spring over Copilot til:
+
+✗ Kritisk kommunikation (kunder, presse) - skriv selv
+✗ Komplekse beregninger (Excel) - lav dem manuelt eller med formler
+✗ Kreativt arbejde der kræver nuance
+✗ Følsom information (HR, juridisk)
+
+---
+
+<ExerciseBox
+  title="Øvelse (15 minutter)"
+  description="Test Copilot i de apps du bruger mest:"
+  steps={[
+    "Excel: Upload data og bed Copilot analysere. Prompt: 'Analysér denne data. Find top 3 [kategori] og vis som diagram.'",
+    "Outlook: Bed Copilot opsummere en lang email-tråd i 3 bullets.",
+    "Teams: Efter næste møde, bed Copilot opsummere i 5 punkter med action items."
+  ]}
+  hint="Læg mærke til: Hvad sparer dig tid? Hvad skal du stadig tjekke manuelt?"
+/>
+
+---
+
+## Færdig med Lektion 3!
+
+Du har nu lært:
+- Hvornår Copilot er bedre end ChatGPT/Claude
+- SIKT-frameworket til Office-prompts
+- Specifikke prompts til Word, PowerPoint, Excel, Outlook og Teams
+- Begrænsninger og workarounds
+
+**Næste skridt:** Brug Copilot i dit daglige arbejde. Start med én rutine-opgave per dag.
+
+---
+
+## Tilbage til oversigt
+
+[Prompt Skolen oversigt](../README.md)

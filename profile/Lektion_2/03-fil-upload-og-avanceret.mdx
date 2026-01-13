@@ -1,0 +1,262 @@
+---
+title: "Fil-upload og Avancerede Features"
+timeEstimate: "12 min"
+worksIn: "ChatGPT Plus"
+---
+
+# Fil-upload og Avancerede Features
+
+**Lektion 2: ChatGPT / Teknik 3**
+**Tid:** 12 min
+
+---
+
+## TEKNIKKEN
+
+ChatGPT Plus kan læse og analysere filer direkte.
+
+Upload en PDF, Word-fil, eller Excel-ark. Bed ChatGPT om at opsummere, finde nøgletal, eller svare på spørgsmål om indholdet.
+
+**Max størrelse:** 50 MB per fil
+
+---
+
+## Understøttede formater
+
+<ComparisonTable
+  columns={[
+    { header: "Type" },
+    { header: "Formater" }
+  ]}
+  rows={[
+    { label: "Dokumenter", values: ["PDF, Word (.docx), PowerPoint (.pptx), tekstfiler"] },
+    { label: "Data", values: ["Excel (.xlsx), CSV"] },
+    { label: "Billeder", values: ["PNG, JPG, GIF, WebP"] },
+    { label: "Kode", values: ["Python, JavaScript, JSON, XML, etc."] }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Opsummer mit dokument"
+  goodPrompt={`Opsummer dette dokument i 5 bullet points.
+Fremhæv de vigtigste tal og konklusioner.
+Format: Hvert punkt max 20 ord.`}
+  badExplanation="Ingen instruktion om format, ingen angivelse af længde. Resultat: Lang opsummering du skal sortere og forkorte selv."
+  goodExplanation="Præcis det format du har brug for, klar til at bruge."
+/>
+
+---
+
+## Analysér dokument - Eksempel
+
+Upload en salgsrapport (PDF) og skriv:
+
+<CopyablePrompt
+  title="Dokumentanalyse"
+  prompt={`Analysér denne salgsrapport:
+
+1. Hvad er hovedkonklusionen? (1 sætning)
+2. Top 3 produkter efter omsætning
+3. Største udfordring nævnt i rapporten
+4. Anbefalinger fra rapporten
+5. Giv mig de vigtigste tal i en tabel`}
+/>
+
+**Output eksempel:**
+
+```
+Baseret på rapporten:
+
+1. Hovedkonklusion: Salget steg 23% i Q3 sammenlignet med Q2
+
+2. Top 3 produkter:
+   - Premium-serien: 2,4 mio kr (67% af væksten)
+   - Standard-pakken: 1,8 mio kr
+   - Budget-løsning: 0,9 mio kr
+
+3. Største udfordring: Kun 45% markedsandel i Jylland vs 78% på Sjælland
+
+4. Anbefalinger: Fokusér markedsføring på Jylland i Q4, ansæt sælger i Århus
+
+5. Nøgletal:
+
+| Metrik | Q2 | Q3 | Ændring |
+|--------|----|----|---------|
+| Omsætning | 4,1 mio | 5,1 mio | +23% |
+| Nye kunder | 34 | 47 | +38% |
+| Gennemsnitlig ordre | 12.500 kr | 14.200 kr | +14% |
+```
+
+---
+
+## Browsing (kun Plus)
+
+ChatGPT kan søge på nettet i realtid og give dig svar med kilder.
+
+Brug det til:
+- Aktuelle nyheder
+- Priser og tilgængelighed
+- Research med kilder
+- Faktatjek
+
+---
+
+## Hvornår skal du bruge browsing?
+
+<ComparisonTable
+  columns={[
+    { header: "Situation" },
+    { header: "Brug browsing?" }
+  ]}
+  rows={[
+    { label: "Aktuelle nyheder (i dag/denne uge)", values: ["Ja"] },
+    { label: "Priser på produkter", values: ["Ja"] },
+    { label: "Research med kilder", values: ["Ja"] },
+    { label: "Historisk information", values: ["Nej (ChatGPT ved det)"] },
+    { label: "Din virksomheds interne data", values: ["Nej (upload fil i stedet)"] }
+  ]}
+/>
+
+---
+
+<PromptComparison
+  badPrompt="Hvad koster en iPhone?"
+  goodPrompt={`Søg efter aktuelle priser på iPhone 15 Pro 256GB i Danmark.
+Sammenlign priser på Elgiganten, Power og Apple Store.
+Inkluder links og find bedste tilbud.
+Vis resultat som tabel.`}
+  badExplanation="Hvilken iPhone model? I hvilke butikker? Hvilket land/område? ChatGPT gætter på en generisk model og giver vag prisindikation."
+  goodExplanation="Tabel med priser fra de 3 butikker, links, og klar anbefaling."
+/>
+
+---
+
+## Code Interpreter (kun Plus)
+
+ChatGPT kan skrive og køre Python-kode direkte.
+
+Brug det til:
+- Data-analyse og visualisering
+- Filkonvertering
+- Beregninger
+- Automatisering
+
+---
+
+## Data-visualisering - Eksempel
+
+Upload en CSV-fil med salgsdata og skriv:
+
+<CopyablePrompt
+  title="Data visualisering"
+  prompt={`Lav et søjlediagram der viser månedligt salg.
+Tilføj trendlinje.
+Mærk hver søjle med beløb.
+Eksportér som PNG i høj opløsning.`}
+/>
+
+ChatGPT:
+1. Læser CSV-filen
+2. Analyserer data
+3. Laver diagram i Python
+4. Giver dig en PNG du kan downloade
+
+---
+
+## Filkonvertering
+
+<CopyablePrompt
+  title="Konverter Excel til CSV"
+  prompt={`Konverter denne Excel-fil til CSV med semikolon som separator.
+Fjern tomme rækker.
+Gem kun kolonnerne: Navn, Email, Telefon.`}
+/>
+
+ChatGPT konverterer og giver dig den nye fil på sekunder.
+
+---
+
+## Tastatur-genveje
+
+Arbejd hurtigere med disse genveje:
+
+<ComparisonTable
+  columns={[
+    { header: "Genvej" },
+    { header: "Funktion" }
+  ]}
+  rows={[
+    { label: "Ctrl + Shift + ;", values: ["Kopiér sidste kodesvar"] },
+    { label: "Ctrl + Shift + C", values: ["Kopiér sidste svar"] },
+    { label: "Ctrl + /", values: ["Vis alle genveje"] },
+    { label: "Shift + Esc", values: ["Ny chat"] }
+  ]}
+/>
+
+(Mac: Brug `Cmd` i stedet for `Ctrl`)
+
+---
+
+## Begrænsninger at kende
+
+<Callout type="warning">
+**Fil-upload begrænsninger:**
+- Max 50 MB per fil
+- Kan ikke læse password-beskyttede filer
+- OCR i PDF'er er ikke perfekt - tjek tal manuelt
+- Excel-filer med mange formler kan give fejl
+</Callout>
+
+<Callout type="warning">
+**Browsing begrænsninger:**
+- Kan misse den allernyeste information (sidste time)
+- Nogle websites blokerer ChatGPT
+- Kan ikke browse bag login (kun offentlige sider)
+</Callout>
+
+<Callout type="warning">
+**Code Interpreter begrænsninger:**
+- Timeout efter 5 minutter for lange beregninger
+- Begrænset hukommelse (kan ikke behandle kæmpe filer)
+- Kun Python (ikke Java, C++, etc.)
+</Callout>
+
+---
+
+## Hvornår ChatGPT Plus vs andre værktøjer?
+
+<ComparisonTable
+  columns={[
+    { header: "Opgave" },
+    { header: "ChatGPT Plus" },
+    { header: "Bedre alternativ" }
+  ]}
+  rows={[
+    { label: "Analyse af PDFs", values: [true, "-"] },
+    { label: "Data-visualisering", values: [true, "Excel (mere kontrol)"] },
+    { label: "Web research", values: [true, "Perplexity (mere dybde)"] },
+    { label: "Meget store filer (>50 MB)", values: [false, "Claude (større kontekst)"] },
+    { label: "Samarbejde i team", values: ["Custom GPTs", "Microsoft Copilot 365"] }
+  ]}
+/>
+
+---
+
+<ExerciseBox
+  title="Øvelse (15 minutter)"
+  steps={[
+    "Del 1 (5 min): Upload et dokument du arbejder med (PDF, Word, eller Excel). Bed ChatGPT: 'Opsummer dette dokument i 5 punkter. Fremhæv vigtigste tal. Find eventuelle fejl eller manglende information.'",
+    "Del 2 (5 min): Prøv browsing-funktionen: 'Søg efter de nyeste anmeldelser af [produkt du overvejer at købe]. Find 3 anmeldelser fra danske kilder. Opsummer fordele og ulemper i tabel.'",
+    "Del 3 (5 min): Hvis du har data i CSV eller Excel, prøv Code Interpreter: 'Analysér denne fil. Vis gennemsnit, median, og højeste/laveste værdi. Lav et simpelt diagram der viser fordelingen.'"
+  ]}
+/>
+
+---
+
+## Næste skridt
+
+Gå tilbage til [Prompt Skolen oversigt](../README.md) for at udforske flere lektioner.
+
+Eller fortsæt til **Lektion 3: Microsoft Copilot** hvis din virksomhed bruger Microsoft 365.

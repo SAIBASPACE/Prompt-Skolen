@@ -1,0 +1,169 @@
+---
+title: "Output format: Få data du kan bruge"
+timeEstimate: "5 min"
+worksIn: "Alle værktøjer"
+---
+
+# Output format: Få data du kan bruge
+
+**Lektion 1: Basics / Teknik 4**
+**Tid:** 5 min
+
+---
+
+## TEKNIKKEN
+
+Du fortæller AI'en præcis hvordan svaret skal se ud:
+- Tabel
+- Punktliste
+- Nummereret liste
+- JSON
+- Email-format
+- Specifik længde
+
+Uden format-instruktion får du en "wall of text" du skal omformatere selv.
+
+Med format-instruktion får du data klar til at:
+- Kopiere ind i Excel
+- Sende som email
+- Bruge i et andet system
+
+---
+
+<PromptComparison
+  badPrompt="Analysér denne kundefeedback og fortæl mig hvad kunderne synes"
+  goodPrompt={`Her er 10 kommentarer fra kundetilfredshedsundersøgelse:
+[KOMMENTARER]
+
+Kategorisér hver kommentar.
+
+OUTPUT FORMAT:
+Tabel med kolonnerne:
+| # | Kategori | Positiv/Negativ | Citat (max 10 ord) |
+
+Kategorier at bruge: Levering, Produkt, Service, Pris, Andet`}
+  badExplanation="5 afsnit prosa du skal læse og selv lave til handling."
+  goodExplanation="Tabel klar til at kopiere direkte i Excel."
+/>
+
+---
+
+## Format-eksempler du kan bruge
+
+### Tabel (til Excel)
+
+<CopyablePrompt
+  prompt="Output som tabel med kolonnerne: [Kolonne1], [Kolonne2], [Kolonne3]"
+/>
+
+### Punktliste
+
+<CopyablePrompt
+  prompt="Output som punktliste. Max 5 punkter. Hvert punkt max 15 ord."
+/>
+
+### Email-klar
+
+<CopyablePrompt
+  prompt={`Output som email med:
+- Emnelinje
+- Kære [navn]
+- Brødtekst
+- Venlig hilsen`}
+/>
+
+### JSON (til systemer)
+
+<CopyablePrompt
+  prompt={`Output som JSON:
+{
+  "kunde": "navn",
+  "problem": "beskrivelse",
+  "prioritet": "høj/mellem/lav"
+}`}
+/>
+
+### Specifik længde
+
+<CopyablePrompt
+  prompt={`Max 50 ord.
+Præcis 3 bullet points.
+Max 2 sætninger pr. afsnit.`}
+/>
+
+---
+
+## De 5 mest brugte formater i erhvervslivet
+
+### 1. Meeting notes
+
+<CopyablePrompt
+  title="Mødereferat format"
+  prompt={`Output:
+## Beslutninger
+- [liste]
+
+## Handlinger
+| Hvad | Hvem | Deadline |
+
+## Parkeret til senere
+- [liste]`}
+/>
+
+### 2. Email-svar
+
+<CopyablePrompt
+  title="Email format"
+  prompt={`Output som email.
+Tone: Professionel men varm.
+Max 100 ord.
+Inkludér ikke "Jeg håber denne email finder dig vel" eller lignende fyld.`}
+/>
+
+### 3. Rapport-afsnit
+
+<CopyablePrompt
+  title="Rapport format"
+  prompt={`Output som afsnit til intern rapport.
+Ingen bullets.
+3-4 sætninger.
+Afslut med anbefaling.`}
+/>
+
+### 4. Social media
+
+<CopyablePrompt
+  title="Social media format"
+  prompt={`Output:
+- Hook (første linje, max 10 ord)
+- Brødtekst (max 60 ord)
+- CTA (spørgsmål, ikke salgstale)`}
+/>
+
+### 5. Analyse-resultat
+
+<CopyablePrompt
+  title="Analyse format"
+  prompt={`Output:
+1. Konklusion (1 sætning)
+2. Top 3 indsigter (bullets)
+3. Anbefalet handling (1 sætning)`}
+/>
+
+---
+
+<ExerciseBox
+  title="Øvelse (3 minutter)"
+  description="Test forskellen mellem prompt uden og med format:"
+  steps={[
+    "Prompt 1 (uden format): 'Hvad er fordelene ved varmepumper?'",
+    "Prompt 2 (med format): 'Hvad er fordelene ved varmepumper for danske husejere? Output: Tabel med 5 rækker. Kolonnerne: Fordel | Årlig besparelse (ca.) | Forudsætning'"
+  ]}
+  hint="Hvilken er mest brugbar hvis du skal lave en salgspræsentation?"
+/>
+
+---
+
+## Næste lektion
+
+[05 - Kæde tanker (Chain-of-Thought) →](./05-kaede-tanker.md)
