@@ -1,0 +1,67 @@
+---
+title: "Kontekst (CIEO)"
+order: 2
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Kontekst (CIEO)"
+description: "Forstå CIEO-frameworket for komplette prompts"
+---
+
+## TEKNIKKEN
+
+CIEO er en simpel model der sikrer dine prompts indeholder al nødvendig information. De fleste dårlige AI-resultater skyldes manglende kontekst — AI'en gætter på hvad du mener, og gætter ofte forkert.
+
+
+## CIEO-MODELLEN
+
+<ConceptCard title=`CIEO Framework` items={[
+  {
+    "letter": "C",
+    "title": "Context",
+    "description": "Hvem er du? Hvad er situationen? Hvad er baggrunden for opgaven?"
+  },
+  {
+    "letter": "I",
+    "title": "Instruction",
+    "description": "Hvad skal AI'en konkret gøre? Vær specifik og præcis."
+  },
+  {
+    "letter": "E",
+    "title": "Examples",
+    "description": "Vis et eksempel på det ønskede output eller den ønskede stil."
+  },
+  {
+    "letter": "O",
+    "title": "Output",
+    "description": "Specificér format, længde og struktur på resultatet."
+  }
+]} />
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en email til en kunde om forsinkelse.`}
+  goodPrompt={`Context:
+Jeg er kundeservicechef. En kunde har bestilt værre 5 dage forsinket pga. logistikproblemer.
+
+Instruction:
+Skriv en undskyldsmail der forklarer situationen ærligt.
+
+Example:
+Tone som dette: 'Vi beklager dybt. Her er præcist hvad der skete...'
+
+Output:
+Max 100 ord. Afslut med konkret dato for levering.`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+
+## ROI PÅ TID
+
+<ExerciseBox
+  title=`Øvelse 3 min`
+  description=`Tag en opgave du normalt ville give AI. Strukturer den med CIEO: Skriv Context, Instruction, Example og Output-krav. Sammenlign resultatet med din normale tilgang.`
+  steps={[]}
+/>

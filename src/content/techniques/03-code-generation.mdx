@@ -1,0 +1,51 @@
+---
+title: "Code Generation"
+order: 3
+lesson: "lektion-4"
+estimatedTime: "4 min"
+breadcrumb: "Code Generation"
+description: "Få stabil kode med klare krav"
+---
+
+## KRAV
+
+Kode‑prompts skal have constraints: sprog, format, filnavn, og edge cases.
+
+### Typiske krav
+
+- Sprog + version
+- Input/output format
+- Fejlhåndtering
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en funktion til at validere email`}
+  goodPrompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`}
+  badExplanation={`Uklarhed giver uens kode.`}
+  goodExplanation={`Krav giver konsistent output.`}
+/>
+
+<CopyablePrompt title=`AI‑respons` prompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`} />
+
+<AISimulation prompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`} response={`export function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// Tests
+isValidEmail("a@b.com") // true
+isValidEmail("test.user@domain.co") // true
+isValidEmail("bad@") // false
+isValidEmail("no-at.com") // false
+isValidEmail("a@b") // false`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Vælg en lille kodeopgave og tilføj klare constraints.`
+  steps={[
+  "Angiv sprog og version",
+  "Angiv input/output",
+  "Bed om tests"
+]}
+/>

@@ -1,0 +1,52 @@
+---
+title: "Error Handling"
+order: 2
+lesson: "lektion-3"
+estimatedTime: "4 min"
+breadcrumb: "Error Handling"
+description: "Få AI til at håndtere fejl og manglende data"
+---
+
+## TEKNIKKEN
+
+Error handling i prompts betyder, at du fortæller modellen, hvad den skal gøre når information mangler.
+
+### Eksempler
+
+- “Hvis du er i tvivl, spørg mig først”
+- “Hvis data mangler, antag X og skriv det eksplicit”
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Lav en rapport på baggrund af disse data`}
+  goodPrompt={`Lav en rapport. Hvis data mangler, skriv “Mangler data” under afsnittet og giv 2 konkrete spørgsmål du har brug for.`}
+  badExplanation={`Modellen gætter ofte eller udfylder huller uden at sige det.`}
+  goodExplanation={`Du får transparens og kan hurtigt supplere det manglende.`}
+/>
+
+<CopyablePrompt title=`AI‑respons` prompt={`Lav en rapport. Hvis data mangler, skriv “Mangler data” under afsnittet og giv 2 konkrete spørgsmål du har brug for.`} />
+
+<AISimulation prompt={`Lav en rapport. Hvis data mangler, skriv “Mangler data” under afsnittet og giv 2 konkrete spørgsmål du har brug for.`} response={`RAPPORT
+
+1) Konklusion
+Mangler data
+
+2) Nøgletal
+Mangler data
+
+Spørgsmål:
+- Hvad er den aktuelle baseline (fx antal/omsætning)?
+- Hvilken periode gælder dataene for?`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Skriv en prompt der eksplicit beskriver hvad modellen skal gøre ved manglende data.`
+  steps={[
+  "Vælg en opgave med ufuldstændig info",
+  "Tilføj regler for “mangler data”",
+  "Kør prompten og justér"
+]}
+  hint=`Tving modellen til at stille 2-3 spørgsmål hvis noget mangler.`
+/>

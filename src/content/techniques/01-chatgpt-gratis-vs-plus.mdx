@@ -1,0 +1,211 @@
+---
+title: "ChatGPT: Gratis vs Plus"
+order: 1
+lesson: "lektion-2"
+estimatedTime: "8 minutter"
+breadcrumb: "ChatGPT Gratis vs Plus"
+description: "Forstå forskellen mellem gratis og Plus version"
+---
+
+## HVAD ER FORSKELLEN?
+
+ChatGPT findes i to versioner: gratis på chatgpt.com og Plus til 20 USD/måned.
+
+Den gratis version er god til det meste. Plus giver dig hurtigere svar, smartere AI, og avancerede features som fil-upload og web-søgning.
+
+
+## GRATIS VERSION (CHATGPT.COM)
+
+### Hvad du får
+
+**GPT-4o mini:** Hurtig model, god til de fleste opgaver.
+
+**Begrænset antal beskeder:** Varierer per dag.
+
+**Ingen hukommelse:** Hver samtale starter fra nul.
+
+**Ingen fil-upload:** Kan ikke læse PDF, Word, Excel.
+
+
+## BEDSTE BRUG
+
+<ComparisonTable columns={[
+  {
+    "header": "Virker godt"
+  },
+  {
+    "header": "Virker dårligt"
+  }
+]} rows={[
+  {
+    "label": "Skrive emails",
+    "values": [
+      true,
+      false
+    ]
+  },
+  {
+    "label": "Opsummere tekst",
+    "values": [
+      true,
+      false
+    ]
+  },
+  {
+    "label": "Oversætte",
+    "values": [
+      true,
+      false
+    ]
+  },
+  {
+    "label": "Simpel kode",
+    "values": [
+      true,
+      false
+    ]
+  },
+  {
+    "label": "Lange dokumenter",
+    "values": [
+      false,
+      true
+    ]
+  },
+  {
+    "label": "Billeder",
+    "values": [
+      false,
+      true
+    ]
+  },
+  {
+    "label": "Research med kilder",
+    "values": [
+      false,
+      true
+    ]
+  }
+]} />
+
+
+## CHATGPT PLUS (20 USD/MÅNED)
+
+### Hvad du får ekstra
+
+**GPT-4o:** Smartere model til komplekse opgaver.
+
+**Flere beskeder:** Ingen praktisk grænse for de fleste.
+
+**Hukommelse:** Husker information mellem samtaler.
+
+**Custom GPTs:** Specialiserede assistenter.
+
+**Fil-upload:** PDF, Word, Excel, billeder.
+
+**DALL-E:** Billede-generering.
+
+**Browsing:** Søger på nettet i realtid.
+
+**Code Interpreter:** Kører Python-kode.
+
+
+## TIDSBESPARELSER
+
+Med Plus får du:
+
+**30 sek:** Hurtigere email-svar med hukommelse.
+
+**10 min:** Mindre research tid med browsing.
+
+**5x:** Hurtigere dokument-analyse med fil-upload.
+
+<PromptComparison
+  badPrompt={`Skriv en opfølgningsmail til en kunde vi mødtes med i går`}
+  goodPrompt={`Skriv en opfølgningsmail til en kunde vi mødtes med i går`}
+  badExplanation={`Uden hukommelse (gratis): ChatGPT kender ikke din virksomhed, kender ikke din tone, kender ikke hvem du er. Generisk mail du skal tilpasse manuelt.`}
+  goodExplanation={`Med hukommelse (Plus): Mail i din virksomheds tone, klar til at sende (fordi ChatGPT husker hvem du er, hvilken virksomhed, og jeres tone).`}
+/>
+
+
+## HVORNÅR SKAL DU OPGRADERE TIL PLUS?
+
+### Du får værdi af Plus hvis:
+
+**Du bruger ChatGPT dagligt:** Flere beskeder og hurtigere svar betaler sig.
+
+**Du arbejder med dokumenter:** Fil-upload sparer timer om ugen.
+
+**Du laver research:** Web-søgning giver aktuelle svar med kilder.
+
+**Du har gentagne opgaver:** Hukommelse fjerner gentagelse af kontekst.
+
+**Dit team skal bruge samme prompts:** Custom GPTs sikrer konsistens.
+
+### Bliv ved gratis hvis:
+
+**Du bruger ChatGPT sjældent:** Under 10 min per dag.
+
+**Dine opgaver er simple:** Oversættelser, kort tekst, basic spørgsmål.
+
+**Du ikke arbejder med filer:** Ingen PDFs, Excel, eller billeder.
+
+**Budget er stramt:** 20 USD/måned er for meget.
+
+
+## HVORNÅR CHATGPT VS ANDRE VÆRKTØJER?
+
+<ComparisonTable columns={[
+  {
+    "header": "ChatGPT"
+  },
+  {
+    "header": "Bedre alternativ"
+  }
+]} rows={[
+  {
+    "label": "Generel skrivning",
+    "values": [
+      true,
+      "-"
+    ]
+  },
+  {
+    "label": "Kode",
+    "values": [
+      true,
+      "Claude (bedre til lange filer)"
+    ]
+  },
+  {
+    "label": "Research med kilder",
+    "values": [
+      "Plus",
+      "Perplexity"
+    ]
+  },
+  {
+    "label": "Microsoft Office integration",
+    "values": [
+      false,
+      "Copilot 365"
+    ]
+  },
+  {
+    "label": "Meget lange dokumenter",
+    "values": [
+      "Plus",
+      "Claude (større kontekst)"
+    ]
+  }
+]} />
+
+<ExerciseBox
+  title=`Øvelse (5 minutter)`
+  description=`Gratis brugere: Test ChatGPT gratis på en af dine almindelige opgaver. Noter hvad der virker og hvor du løber ind i begrænsninger.`
+  steps={[
+  "Plus brugere: Sæt hukommelse op med din arbejdskontekst",
+  "I ChatGPT, skriv: \"Husk: Jeg hedder [navn], arbejder som [rolle] hos [firma]. Vi bruger [værktøjer] og har [antal] ansatte. Vores tone er [beskrivelse].\"",
+  "Test ved at bede om en email uden at specificere firma eller tone"
+]}
+/>

@@ -1,0 +1,59 @@
+---
+title: "Eksempler i prompt"
+order: 3
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Eksempler i prompt"
+description: "Lær at styre AI's tone og stil gennem eksempler"
+---
+
+## TEKNIKKEN
+
+AI lærer hurtigere fra eksempler end fra instruktioner. I stedet for at forklare præcis hvordan outputtet skal se ud, kan du vise et eller flere eksempler. Dette kaldes "few-shot prompting".
+
+Teknikken er særligt effektiv til at matche en bestemt tone, stil eller format som er svær at beskrive med ord.
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en kort, salgsorienteret produktbeskrivelse til et bambussugerør.`}
+  goodPrompt={`Skriv produktbeskrivelser i denne stil:
+
+Eksempel:
+'Hverdagligt keramisk krus. Rummer kaffe. Koster. Rummer ikke brok.'
+
+Nu skriver du for:
+Bambus skærebræt`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+
+## RESULTAT
+
+<AISimulation prompt={``} response={`Skriv produktbeskrivelser i denne stil...
+
+'Bambusskærebræt. Hurtigtvoksende træ. Hårdføre knive. Perfekt til morgenmaden.'`} />
+
+
+## FLERE EKSEMPLER GIVER BEDRE RESULTATER
+
+Jo flere eksempler du giver, jo bedre forstår AI'en mønstret:
+
+**1 eksempel:**
+AI'en får en idé om stilen
+
+**2-3 eksempler:**
+AI'en identificerer mønstret
+
+**4+ eksempler:**
+AI'en matcher stilen præcist
+
+Start med et enkelt eksempel. Tilføj flere hvis resultatet ikke matcher dine forventninger.
+
+<ExerciseBox
+  title=`Øvelse 2 min`
+  description=`Find en tekst du godt kan lide stilen af (email, produktbeskrivelse, LinkedIn-opslag). Brug som eksempel i en prompt til at skrive noget lignende til et andet emne.`
+  steps={[]}
+/>

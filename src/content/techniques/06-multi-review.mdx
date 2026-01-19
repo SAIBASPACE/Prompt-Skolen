@@ -1,0 +1,37 @@
+---
+title: "Multi-review"
+order: 6
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Multi-review"
+description: "Få AI til at kritisere og forbedre sit eget output"
+---
+
+## TEKNIKKEN
+
+AI'er laver ofte fejl i første forsøg, men er gode til at finde fejl når de leder efter dem. Ved at bede AI'en gennemgå og kritisere sit eget output får du et mere gennemarbejdet resultat.
+
+Dette er især nyttigt til vigtig kommunikation: emails til kunder, rapporter til ledelsen, eller dokumenter der skal publiceres.
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en artikel til vores blog om vores nye produkt.`}
+  goodPrompt={`Trin 1: Skriv en artikel til vores blog om vores nye produkt (300 ord).
+
+Trin 2: Kritisér dit eget udkast:
+- Er tonen for sælgende?
+- Mangler der konkret information?
+- Ville en læser have ubesvarede spørgsmål?
+
+Trin 3: Skriv en forbedret version baseret på kritikken.`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+<ExerciseBox
+  title=`Øvelse 3 min`
+  description=`Bed AI om at skrive noget vigtigt (email, rapport, analyse). Derefter bed den kritisere sit eget output og skrive en forbedret version. Sammenlign første og anden version.`
+  steps={[]}
+/>

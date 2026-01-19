@@ -1,0 +1,49 @@
+---
+title: "Prompt Iteration"
+order: 1
+lesson: "lektion-3"
+estimatedTime: "4 min"
+breadcrumb: "Prompt Iteration"
+description: "Forbedr resultater med små justeringer"
+---
+
+## METODEN
+
+Iteration er en enkel proces: prompt → output → justér. Det giver hurtigt bedre kvalitet uden at gøre prompts lange.
+
+### Typiske justeringer
+
+- Læg konkrete krav til format ind
+- Skær unødvendige ord væk
+- Tilføj 1-2 eksempler
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en LinkedIn post om produktet`}
+  goodPrompt={`Skriv en LinkedIn post (120-150 ord). Tone: professionel og konkret. Inkludér 1 tal, 1 kort kunde-citat og 1 CTA.`}
+  badExplanation={`Uden justeringer bliver output ofte generisk.`}
+  goodExplanation={`Små krav giver stor effekt på kvaliteten.`}
+/>
+
+<CopyablePrompt title=`AI‑respons` prompt={`Skriv en LinkedIn post (120-150 ord). Tone: professionel og konkret. Inkludér 1 tal, 1 kort kunde-citat og 1 CTA.`} />
+
+<AISimulation prompt={`Skriv en LinkedIn post (120-150 ord). Tone: professionel og konkret. Inkludér 1 tal, 1 kort kunde-citat og 1 CTA.`} response={`Vi har netop hjulpet en kunde med at reducere deres svartid med 32% på kun 4 uger. 
+
+"Vi kunne mærke effekten allerede efter første sprint," siger Mette, Head of Ops.
+
+Nøglen var at stramme processen og fjerne unødvendige steps — ikke at tilføje nye værktøjer. 
+
+Vil du se hvordan det kan se ud hos jer? Skriv til mig, så deler jeg vores playbook.`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Tag en eksisterende prompt og forbedr den i tre små iterationer.`
+  steps={[
+  "Start med en enkel prompt",
+  "Tilføj formatkrav",
+  "Tilføj 1 konkret eksempel eller tal"
+]}
+  hint=`Hold hver iteration lille. Store ændringer gør det svært at se effekten.`
+/>

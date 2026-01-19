@@ -1,0 +1,72 @@
+---
+title: "Persona"
+order: 1
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Persona"
+description: "Lær hvordan rolledefinition forbedrer output kvalitet"
+---
+
+## TEKNIKKEN
+
+Når du fortæller AI hvilken rolle den skal påtage sig, tilpasser den automatisk ordvalg, struktur og faglig dybde. En HR-chef skriver anderledes end en marketingmedarbejder. En jurist argumenterer anderledes end en sælger.
+
+Persona-teknikken er den simpleste måde at forbedre dine AI-resultater på. Det tager 5 sekunder ekstra at skrive, men sparer minutter i redigering.
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en jobannonce for en CNC-operatør.`}
+  goodPrompt={`Du er en erfaren HR-chef i en dansk produktionsvirksomhed med 200 ansatte.
+
+Skriv en jobannonce for en CNC-operatør.`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+
+## RESULTAT
+
+<AISimulation prompt={``} response={`Du er en erfaren HR-chef i en dansk produktionsvirksomhed...
+
+CNC-operatør søges til moderne produktionsmiljø
+
+Vi søger en erfaren CNC-operatør til vores maskinværksted i Vejle.
+Du vil arbejde med moderne CNC-maskiner og være en del af et
+dynamisk team.
+
+Krav:
+• Erfaring med CNC-programmering
+• Struktureret og præcist arbejde
+• Teamorienteret personlighed
+
+Vi tilbyder:
+• Konkurrencedygtig løn
+• Gode arbejdsforhold
+• Mulighed for udvikling
+
+Send ansøgning til: job@virksomhed.dk`} />
+
+
+## FLERE EKSEMPLER
+
+Persona-teknikken virker til alle typer opgaver:
+
+**Salgskonsulent:**
+"Du er salgskonsulent med 10 års erfaring i B2B software-salg..."
+
+**Controller:**
+"Du er controller i en dansk mellemstor virksomhed..."
+
+**Kundeservicemedarbejder:**
+"Du er kundeservicemedarbejder i en e-handelsvirksomhed..."
+
+**Jurist:**
+"Du er erhvervsjurist specialiseret i danske ansættelsesforhold..."
+
+<ExerciseBox
+  title=`Øvelse 2 min`
+  description=`Tag din næste AI-opgave. Tilføj en relevant persona i starten af din prompt. Sammenlign resultatet med og uden persona.`
+  steps={[]}
+/>

@@ -1,0 +1,45 @@
+---
+title: "Performance Tuning"
+order: 3
+lesson: "lektion-3"
+estimatedTime: "4 min"
+breadcrumb: "Performance Tuning"
+description: "Få hurtigere og bedre output med strammere rammer"
+---
+
+## HVAD DU OPTIMERER
+
+Performance handler om at få præcise svar hurtigt. Du optimerer ved at gøre prompten kortere og mere direkte.
+
+### Typiske greb
+
+- Begræns længde
+- Angiv format
+- Fjern fluff
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en lang og grundig analyse af kundernes behov`}
+  goodPrompt={`Skriv en analyse på 150 ord. Format: 3 bullets med “Problem → Insight → Løsning”.`}
+  badExplanation={`Langt output er langsommere og sværere at bruge.`}
+  goodExplanation={`Kort format giver hurtig overblik og bedre kvalitet.`}
+/>
+
+<CopyablePrompt title=`AI‑respons` prompt={`Skriv en analyse på 150 ord. Format: 3 bullets med “Problem → Insight → Løsning”.`} />
+
+<AISimulation prompt={`Skriv en analyse på 150 ord. Format: 3 bullets med “Problem → Insight → Løsning”.`} response={`• Problem: Kunderne falder fra i onboarding → Insight: De mangler én klar “next step” → Løsning: Indfør en 3‑trins guide på første skærm.
+• Problem: Support spikes efter køb → Insight: Features forklares for sent → Løsning: Vis 2 korte “tips” direkte efter køb.
+• Problem: Lav aktivering i uge 1 → Insight: Der er ingen trigger → Løsning: Send en dag‑2 reminder med én konkret handling.`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Tag en prompt du bruger ofte og gør den 30% kortere uden at miste krav.`
+  steps={[
+  "Fjern unødvendige ord",
+  "Tilføj 1 formatkrav",
+  "Sæt længdegrænse"
+]}
+  hint=`Kortere prompt kan give mere præcist svar.`
+/>

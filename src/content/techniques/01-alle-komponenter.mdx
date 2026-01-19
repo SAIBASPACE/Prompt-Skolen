@@ -1,0 +1,147 @@
+---
+title: "Design Showcase - Alle UI Komponenter"
+order: 1
+lesson: "lektion-0"
+estimatedTime: "5 min"
+breadcrumb: "Design Showcase"
+description: "Se alle tilgængelige design komponenter og UI elementer"
+---
+
+Denne side viser alle tilgængelige UI komponenter. Du kan bruge disse som reference når du bygger læringsindhold.
+
+<ConceptCard title=`1. ConceptCard - Sorte cards med orange accenter` items={[
+  {
+    "letter": "S",
+    "title": "Specifik",
+    "description": "Vær præcis og detaljeret i dine instruktioner. Jo mere specifik du er, jo bedre resultater får du fra AI-modellen."
+  },
+  {
+    "letter": "T",
+    "title": "Tone",
+    "description": "Definer den ønskede tone og stil. Skal svaret være formelt, uformelt, teknisk eller kreativt?"
+  },
+  {
+    "letter": "A",
+    "title": "Audience",
+    "description": "Tænk over din målgruppe. Skriv du til eksperter eller begyndere? Dette påvirker kompleksitetsniveauet."
+  },
+  {
+    "letter": "R",
+    "title": "Result",
+    "description": "Beskriv det ønskede output format. Skal det være en liste, tabel, essay eller noget helt tredje?"
+  }
+]} />
+
+<PromptComparison
+  badPrompt={`Skriv noget om AI`}
+  goodPrompt={`Skriv en introduktion til AI på 150 ord målrettet gymnasieelever. Fokusér på machine learning og inkludér 2 konkrete eksempler fra hverdagen.`}
+  badExplanation={`Alt for vagt - ingen retning, målgruppe eller format defineret.`}
+  goodExplanation={`Klart defineret scope, målgruppe, længde og specifikke krav til indhold.`}
+/>
+
+<ComparisonTable columns={[
+  {
+    "header": "Prompt Type",
+    "description": "Kategori"
+  },
+  {
+    "header": "Use Case",
+    "description": "Anvendelse"
+  },
+  {
+    "header": "Complexity",
+    "description": "Sværhedsgrad"
+  }
+]} rows={[
+  {
+    "label": "Zero-shot",
+    "values": [
+      "Simpel opgave uden eksempler",
+      "Generel anvendelse",
+      "Medium"
+    ]
+  },
+  {
+    "label": "Few-shot",
+    "values": [
+      "Med eksempler til læring",
+      "Konsistent output",
+      "Avanceret"
+    ]
+  },
+  {
+    "label": "Chain-of-thought",
+    "values": [
+      "Trin-for-trin ræsonnering",
+      "Komplekse problemer",
+      "Ekspert"
+    ]
+  }
+]} caption=`Oversigt over forskellige prompt-typer` />
+
+<CopyablePrompt title=`3. CopyablePrompt + AITerminal med typewriter effect` prompt={`Du er en erfaren marketingkonsulent. 
+
+Skriv en engagerende email-kampagne for vores nye produkt "SmartDesk" - et hæve-sænke bord med indbygget AI assistent.
+
+Målgruppe: Tech-interesserede kontormedarbejdere 25-45 år
+Tone: Professionel men venlig
+Længde: 200 ord max
+Inkludér: 
+- Produktfordele
+- Call-to-action
+- Tidsbegrænset tilbud`} />
+
+<AISimulation prompt={`Du er en erfaren marketingkonsulent. 
+
+Skriv en engagerende email-kampagne for vores nye produkt "SmartDesk" - et hæve-sænke bord med indbygget AI assistent.
+
+Målgruppe: Tech-interesserede kontormedarbejdere 25-45 år
+Tone: Professionel men venlig
+Længde: 200 ord max
+Inkludér: 
+- Produktfordele
+- Call-to-action
+- Tidsbegrænset tilbud`} response={`Emne: Opgrader dit workspace med SmartDesk
+
+Kære [Navn],
+
+Forestil dig et skrivebord der tilpasser sig dig - ikke omvendt. SmartDesk er ikke bare et hæve-sænke bord, det er din personlige workspace-assistent.
+
+Vores AI-teknologi lærer dine arbejdsvaner og foreslår automatisk den optimale bordhøjde gennem dagen. Sidder du for længe? SmartDesk minder dig om at stå op. Har du et vigtigt møde? Den justerer sig til din præfererede præsentationshøjde.
+
+Fordele:
+✓ AI-drevet højdejustering
+✓ Sundhedssporing og påmindelser
+✓ Integreret trådløs opladning
+✓ Elegant skandinavisk design
+
+EKSKLUSIVT TILBUD: Få 25% rabat når du bestiller inden 31. december. Brug koden SMARTWORK25 ved checkout.
+
+Gør dit arbejdsliv sundere og smartere. Oplev fremtidens kontor i dag.
+
+Bestil nu → [smartdesk.dk/bestil]
+
+Med venlig hilsen,
+SmartDesk Teamet`} />
+
+<ExerciseBox
+  title=`4. ExerciseBox - Interaktive opgaver`
+  description=`Test dit prompt-skills med denne udfordring!`
+  steps={[
+  "Vælg et produkt eller service du kender godt",
+  "Skriv et detaljeret prompt der inkluderer persona, kontekst og format",
+  "Test promptet i din foretrukne AI-model",
+  "Iterér baseret på resultatet - hvad kan forbedres?"
+]}
+  hint=`Start med at definere din målgruppe tydeligt. Det giver AI bedre kontekst til at skræddersy svaret.`
+/>
+
+<Callout type="tip" title="Tips">
+- Brug altid konkrete eksempler når det er muligt
+- Definer output format (bullets, tabel, essay osv.)
+- Specificér ønsket længde eller omfang
+- Beskriv tone og stil eksplicit
+- Iterér på dine prompts - perfection kommer med øvelse
+</Callout>
+
+Disse komponenter giver dig værktøjerne til at bygge engagerende læringsoplevelser. Kombiner dem kreativt for at skabe effektiv undervisning!

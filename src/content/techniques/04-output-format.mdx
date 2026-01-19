@@ -1,0 +1,66 @@
+---
+title: "Output format"
+order: 4
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Output format"
+description: "Få præcis det format du har brug for"
+---
+
+## TEKNIKKEN
+
+Jo mere præcist du specificerer outputformatet, jo mindre tid bruger du på at redigere bagefter. Du kan bede om tabeller, punktlister, bestemte længder, specifikke strukturer — eller kombinationer af det hele.
+
+
+## FORMAT-MULIGHEDER
+
+**Længde:**
+"Max 100 ord", "Præcis 3 afsnit", "1 side"
+
+**Struktur:**
+"Som en tabel med kolonner: X, Y, Z"
+
+**Stil:**
+"Ingen indledning", "Start direkte med sætningen"
+
+**Format:**
+"Som punktliste", "Som nummereret liste", "Som JSON"
+
+**Tone:**
+"Formel", "Uformel", "Teknisk", "Til ledelsesteam"
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Analysér disse tre leverandører og giv en anbefaling.`}
+  goodPrompt={`Analysér disse tre leverandører.
+
+Output som tabel med kolonner:
+- Leverandør
+- Pris
+- Leveringstid
+- Fordele
+- Ulemper
+
+Afslut med en anbefaling på max 2 sætninger.`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+
+## RESULTAT
+
+<AISimulation prompt={``} response={`| Leverandør | Pris | Leveringstid | Fordele | Ulemper |
+|------------|------|--------------|---------|---------|
+| Firma A    | 45.000 kr | 3 uger   | Hurtig levering | Aftoat erfaring |
+| Firma B    | 52.000 kr | 2 dage   | Hurtig levering | Højere pris |
+| Firma C    | 48.000 kr | 1 uge    | God balance     | Mindre erfaring |
+
+Anbefaling: Vælg Firma C for den bedste balance mellem pris, tid og erfaring.`} />
+
+<ExerciseBox
+  title=`Øvelse 2 min`
+  description=`Tag en analyse-opgave. Specificer præcist hvilket format du vil have output i: tabel, punktliste, max antal ord, eller specifik struktur. Se hvordan det ændrer resultatet.`
+  steps={[]}
+/>

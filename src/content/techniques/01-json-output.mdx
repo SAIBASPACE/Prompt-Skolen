@@ -1,0 +1,54 @@
+---
+title: "JSON Output"
+order: 1
+lesson: "lektion-4"
+estimatedTime: "4 min"
+breadcrumb: "JSON Output"
+description: "Få strukturerede svar der kan bruges direkte i systemer"
+---
+
+## HVORFOR JSON
+
+JSON gør AI‑output maskinlæsbar. Det betyder mindre manuelt arbejde og færre fejl.
+
+### Husk altid
+
+- Definér felterne
+- Angiv datatyper
+- Skriv “returnér kun JSON”
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Liste de vigtigste features`}
+  goodPrompt={`Returnér kun JSON: [{"feature":"...", "benefit":"..."}]`}
+  badExplanation={`Ustruktureret output kræver oprydning.`}
+  goodExplanation={`JSON er klar til at blive brugt direkte.`}
+/>
+
+<CopyablePrompt title=`JSON skabelon` prompt={`Returnér kun JSON:
+[
+  {"feature":"AI assistant","benefit":"Sparer tid"},
+  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
+]`} />
+
+<AISimulation prompt={`Returnér kun JSON:
+[
+  {"feature":"AI assistant","benefit":"Sparer tid"},
+  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
+]`} response={`[
+  {"feature":"AI assistant","benefit":"Sparer tid"},
+  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
+]`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Definér et JSON‑format til en opgave du ofte laver.`
+  steps={[
+  "Vælg 3 felter",
+  "Tilføj eksempelværdier",
+  "Kør prompten"
+]}
+  hint=`Sæt altid “returnér kun JSON”.`
+/>

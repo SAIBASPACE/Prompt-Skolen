@@ -1,0 +1,45 @@
+---
+title: "Production Tips"
+order: 3
+lesson: "lektion-5"
+estimatedTime: "4 min"
+breadcrumb: "Production Tips"
+description: "Gør prompts stabile i virkelige workflows"
+---
+
+## DRIFT
+
+I produktion handler det om stabilitet: klare regler, korte prompts og forudsigelig struktur.
+
+### Best practices
+
+- Lås format
+- Undgå unødvendig tekst
+- Brug faste skabeloner
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skriv en opsummering af mødet`}
+  goodPrompt={`Opsummer mødet i 4 bullets: Beslutninger, Action items, Ejere, Deadlines. Maks 80 ord.`}
+  badExplanation={`Uklart output, kræver oprydning hver gang.`}
+  goodExplanation={`Stabilt output der kan sendes direkte videre.`}
+/>
+
+<CopyablePrompt title=`AI‑respons` prompt={`Opsummer mødet i 4 bullets: Beslutninger, Action items, Ejere, Deadlines. Maks 80 ord.`} />
+
+<AISimulation prompt={`Opsummer mødet i 4 bullets: Beslutninger, Action items, Ejere, Deadlines. Maks 80 ord.`} response={`• Beslutninger: Lancering uge 6
+• Action items: Opdatér roadmap
+• Ejere: Anna (produkt), Kim (marketing)
+• Deadlines: Roadmap færdig 22/1`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Tag en “produktions‑prompt” og stram den op.`
+  steps={[
+  "Lås format",
+  "Tilføj længdegrænse",
+  "Tilføj 2 faste felter"
+]}
+/>

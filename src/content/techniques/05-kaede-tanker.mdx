@@ -1,0 +1,69 @@
+---
+title: "Kæde tanker"
+order: 5
+lesson: "lektion-1"
+estimatedTime: "2 min"
+breadcrumb: "Kæde tanker"
+description: "Få AI til at 'tænke højt' for bedre svar"
+---
+
+## TEKNIKKEN
+
+Ved komplekse opgaver kan du bede AI'en om at "tænke højt" — altså vise en ræsonnering trin for trin før den giver et svar. Dette reducerer fejl markant ved beregninger, analyser og beslutninger.
+
+Teknikken kaldes "Chain of Thought" og er særligt effektiv når der er flere faktorer at overveje eller når svaret afhænger af logisk ræsonnering.
+
+
+## HVORNÅR SKAL DU BRUGE DET?
+
+Beslutninger med flere faktorer
+
+Beregninger og tal-analyse
+
+Strategiske overvejelser
+
+Når du vil forstå AI'ens ræsonnering
+
+Komplekse sammenligninger
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Skal vi ansætte en ny medarbejder eller outsource opgaven? Budget: 500.000 kr/år.`}
+  goodPrompt={`Skal vi ansætte en ny medarbejder eller outsource opgaven?
+
+Budget: 500.000 kr/år
+Opgave: Kundeservice, 20 timer/uge
+
+Tænk trin-for-trin:
+1. Beregn omkostning ved ansættelse (løn, pension, skat)
+2. Beregn omkostning ved outsourcing
+3. Overvej kvalitative faktorer (fleksibilitet, kontrol, videndeling)
+4. Overvej alle faktorer før du konkluderer
+
+med begrundelse`}
+  badExplanation={``}
+  goodExplanation={``}
+/>
+
+
+## TRIGGER-SÆTNINGER
+
+Disse formuleringer aktiverer trin-for-trin tænkning:
+
+"Tænk trin-for-trin"
+
+"Vis din ræsonnering"
+
+"Gennemgå fordele og ulemper før du konkluderer"
+
+"Forklar din tankegang"
+
+"Overvej alle faktorer før du svarer"
+
+<ExerciseBox
+  title=`Øvelse 3 min`
+  description=`Tag en beslutning du skal træffe. Bed AI om at 'tænke trin-for-trin' og overveje alle faktorer før den giver et anbefaling. Sammenlign med et direkte svar uden ræsonnering.`
+  steps={[]}
+/>

@@ -1,0 +1,43 @@
+---
+title: "Self-Consistency"
+order: 3
+lesson: "lektion-2"
+estimatedTime: "4 min"
+breadcrumb: "Self-Consistency"
+description: "Få flere uafhængige løsninger og vælg den bedste"
+---
+
+## IDEEN
+
+Self-consistency betyder, at du får modellen til at give flere løsninger på samme opgave og derefter vælge den bedste. Det reducerer tilfældige fejl.
+
+### Hvorfor virker det?
+
+- Modellen kan lave fejl i én løsning
+- Flere uafhængige svar afslører mønstre
+
+
+## SAMMENLIGNING
+
+<PromptComparison
+  badPrompt={`Hvad er den bedste prisstrategi?`}
+  goodPrompt={`Lav 3 forskellige prisstrategier. Vurder fordele/ulemper og vælg den mest robuste løsning til et B2B SaaS produkt.`}
+  badExplanation={`Ét svar kan være tilfældigt eller skævt.`}
+  goodExplanation={`Flere forslag giver dig mulighed for at vælge med overblik.`}
+/>
+
+<CopyablePrompt title=`Prompt-skabelon` prompt={`Lav 3 alternative løsninger. For hver:
+- Kort rationale
+- Fordele/ulemper
+Til sidst: vælg den bedste og forklar hvorfor.`} />
+
+<ExerciseBox
+  title=`Øvelse (4 minutter)`
+  description=`Bed modellen om 3 løsninger på et reelt problem du står med. Vælg den bedste.`
+  steps={[
+  "Beskriv problemet kort",
+  "Bed om 3 løsninger",
+  "Vælg den mest robuste løsning"
+]}
+  hint=`Brug krav som “robust”, “lav risiko” eller “hurtig implementering”.`
+/>
