@@ -7,9 +7,9 @@ breadcrumb: "Design Showcase"
 description: "Se alle tilgængelige design komponenter og UI elementer"
 ---
 
-Denne side viser alle tilgængelige UI komponenter. Du kan bruge disse som reference når du bygger læringsindhold.
+<SectionText content={"Denne side viser alle tilgængelige UI komponenter. Du kan bruge disse som reference når du bygger læringsindhold."} />
 
-<ConceptCard title=`1. ConceptCard - Sorte cards med orange accenter` items={[
+<ConceptCard title={"1. ConceptCard - Sorte cards med orange accenter"} items={[
   {
     "letter": "S",
     "title": "Specifik",
@@ -33,10 +33,10 @@ Denne side viser alle tilgængelige UI komponenter. Du kan bruge disse som refer
 ]} />
 
 <PromptComparison
-  badPrompt={`Skriv noget om AI`}
-  goodPrompt={`Skriv en introduktion til AI på 150 ord målrettet gymnasieelever. Fokusér på machine learning og inkludér 2 konkrete eksempler fra hverdagen.`}
-  badExplanation={`Alt for vagt - ingen retning, målgruppe eller format defineret.`}
-  goodExplanation={`Klart defineret scope, målgruppe, længde og specifikke krav til indhold.`}
+  badPrompt={"Skriv noget om AI"}
+  goodPrompt={"Skriv en introduktion til AI på 150 ord målrettet gymnasieelever. Fokusér på machine learning og inkludér 2 konkrete eksempler fra hverdagen."}
+  badExplanation={"Alt for vagt - ingen retning, målgruppe eller format defineret."}
+  goodExplanation={"Klart defineret scope, målgruppe, længde og specifikke krav til indhold."}
 />
 
 <ComparisonTable columns={[
@@ -77,21 +77,9 @@ Denne side viser alle tilgængelige UI komponenter. Du kan bruge disse som refer
       "Ekspert"
     ]
   }
-]} caption=`Oversigt over forskellige prompt-typer` />
+]} caption={"Oversigt over forskellige prompt-typer"} />
 
-<CopyablePrompt title=`3. CopyablePrompt + AITerminal med typewriter effect` prompt={`Du er en erfaren marketingkonsulent. 
-
-Skriv en engagerende email-kampagne for vores nye produkt "SmartDesk" - et hæve-sænke bord med indbygget AI assistent.
-
-Målgruppe: Tech-interesserede kontormedarbejdere 25-45 år
-Tone: Professionel men venlig
-Længde: 200 ord max
-Inkludér: 
-- Produktfordele
-- Call-to-action
-- Tidsbegrænset tilbud`} />
-
-<AISimulation prompt={`Du er en erfaren marketingkonsulent. 
+<CopyablePrompt title={"3. CopyablePrompt + AITerminal med typewriter effect"} prompt={"Du er en erfaren marketingkonsulent. 
 
 Skriv en engagerende email-kampagne for vores nye produkt "SmartDesk" - et hæve-sænke bord med indbygget AI assistent.
 
@@ -101,7 +89,19 @@ Længde: 200 ord max
 Inkludér: 
 - Produktfordele
 - Call-to-action
-- Tidsbegrænset tilbud`} response={`Emne: Opgrader dit workspace med SmartDesk
+- Tidsbegrænset tilbud"} />
+
+<AISimulation prompt={"Du er en erfaren marketingkonsulent. 
+
+Skriv en engagerende email-kampagne for vores nye produkt "SmartDesk" - et hæve-sænke bord med indbygget AI assistent.
+
+Målgruppe: Tech-interesserede kontormedarbejdere 25-45 år
+Tone: Professionel men venlig
+Længde: 200 ord max
+Inkludér: 
+- Produktfordele
+- Call-to-action
+- Tidsbegrænset tilbud"} response={"Emne: Opgrader dit workspace med SmartDesk
 
 Kære [Navn],
 
@@ -122,26 +122,26 @@ Gør dit arbejdsliv sundere og smartere. Oplev fremtidens kontor i dag.
 Bestil nu → [smartdesk.dk/bestil]
 
 Med venlig hilsen,
-SmartDesk Teamet`} />
+SmartDesk Teamet"} />
 
 <ExerciseBox
-  title=`4. ExerciseBox - Interaktive opgaver`
-  description=`Test dit prompt-skills med denne udfordring!`
+  title={"4. ExerciseBox - Interaktive opgaver"}
+  description={"Test dit prompt-skills med denne udfordring!"}
   steps={[
   "Vælg et produkt eller service du kender godt",
   "Skriv et detaljeret prompt der inkluderer persona, kontekst og format",
   "Test promptet i din foretrukne AI-model",
   "Iterér baseret på resultatet - hvad kan forbedres?"
 ]}
-  hint=`Start med at definere din målgruppe tydeligt. Det giver AI bedre kontekst til at skræddersy svaret.`
+  hint={"Start med at definere din målgruppe tydeligt. Det giver AI bedre kontekst til at skræddersy svaret."}
 />
 
-<Callout type="tip" title="Tips">
-- Brug altid konkrete eksempler når det er muligt
-- Definer output format (bullets, tabel, essay osv.)
-- Specificér ønsket længde eller omfang
-- Beskriv tone og stil eksplicit
-- Iterér på dine prompts - perfection kommer med øvelse
-</Callout>
+<TipsBox tips={[
+  "Brug altid konkrete eksempler når det er muligt",
+  "Definer output format (bullets, tabel, essay osv.)",
+  "Specificér ønsket længde eller omfang",
+  "Beskriv tone og stil eksplicit",
+  "Iterér på dine prompts - perfection kommer med øvelse"
+]} />
 
-Disse komponenter giver dig værktøjerne til at bygge engagerende læringsoplevelser. Kombiner dem kreativt for at skabe effektiv undervisning!
+<SectionText content={"Disse komponenter giver dig værktøjerne til at bygge engagerende læringsoplevelser. Kombiner dem kreativt for at skabe effektiv undervisning!"} />
