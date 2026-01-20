@@ -9,7 +9,7 @@ description: "Forstå CIEO-frameworket for komplette prompts"
 
 ## TEKNIKKEN
 
-CIEO er en simpel model der sikrer dine prompts indeholder al nødvendig information. De fleste dårlige AI-resultater skyldes manglende kontekst — AI'en gætter på hvad du mener, og gætter ofte forkert.
+<SectionText content={"CIEO er en simpel model der sikrer dine prompts indeholder al nødvendig information. De fleste dårlige AI-resultater skyldes manglende kontekst — AI'en gætter på hvad du mener, og gætter ofte forkert."} />
 
 
 ## CIEO-MODELLEN
@@ -47,11 +47,29 @@ CIEO er en simpel model der sikrer dine prompts indeholder al nødvendig informa
   goodExplanation={""}
 />
 
-
-## ROI PÅ TID
+<RoiStats title={"ROI PÅ TID"} stats={[
+  {
+    "value": "30 sek",
+    "label": "Ekstra at skrive"
+  },
+  {
+    "value": "10 min",
+    "label": "Sparet i redigering"
+  },
+  {
+    "value": "20x",
+    "label": "ROI på tid"
+  }
+]} />
 
 <ExerciseBox
   title={"Øvelse 3 min"}
   description={"Tag en opgave du normalt ville give AI. Strukturer den med CIEO: Skriv Context, Instruction, Example og Output-krav. Sammenlign resultatet med din normale tilgang."}
   steps={[]}
 />
+
+<TipsBox tips={[
+  "Start med en klar rolle eller persona",
+  "Skriv som om du giver instruktion til en kollega",
+  "Hold prompten kort og konkret"
+]} />

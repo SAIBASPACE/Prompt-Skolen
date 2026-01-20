@@ -9,25 +9,12 @@ description: "Få præcis det format du har brug for"
 
 ## TEKNIKKEN
 
-Jo mere præcist du specificerer outputformatet, jo mindre tid bruger du på at redigere bagefter. Du kan bede om tabeller, punktlister, bestemte længder, specifikke strukturer — eller kombinationer af det hele.
+<SectionText content={"Jo mere præcist du specificerer outputformatet, jo mindre tid bruger du på at redigere bagefter. Du kan bede om tabeller, punktlister, bestemte længder, specifikke strukturer — eller kombinationer af det hele."} />
 
 
 ## FORMAT-MULIGHEDER
 
-**Længde:**
-"Max 100 ord", "Præcis 3 afsnit", "1 side"
-
-**Struktur:**
-"Som en tabel med kolonner: X, Y, Z"
-
-**Stil:**
-"Ingen indledning", "Start direkte med sætningen"
-
-**Format:**
-"Som punktliste", "Som nummereret liste", "Som JSON"
-
-**Tone:**
-"Formel", "Uformel", "Teknisk", "Til ledelsesteam"
+<SectionText content={"**Længde:**\n\"Max 100 ord\", \"Præcis 3 afsnit\", \"1 side\"\n\n**Struktur:**\n\"Som en tabel med kolonner: X, Y, Z\"\n\n**Stil:**\n\"Ingen indledning\", \"Start direkte med sætningen\"\n\n**Format:**\n\"Som punktliste\", \"Som nummereret liste\", \"Som JSON\"\n\n**Tone:**\n\"Formel\", \"Uformel\", \"Teknisk\", \"Til ledelsesteam\""} />
 
 
 ## SAMMENLIGNING
@@ -42,10 +29,16 @@ Jo mere præcist du specificerer outputformatet, jo mindre tid bruger du på at 
 
 ## RESULTAT
 
-<AISimulation prompt={""} response={"| Leverandør | Pris | Leveringstid | Fordele | Ulemper |\n|------------|------|--------------|---------|---------|\n| Firma A    | 45.000 kr | 3 uger   | Hurtig levering | Aftoat erfaring |\n| Firma B    | 52.000 kr | 2 dage   | Hurtig levering | Højere pris |\n| Firma C    | 48.000 kr | 1 uge    | God balance     | Mindre erfaring |\n\nAnbefaling: Vælg Firma C for den bedste balance mellem pris, tid og erfaring."} />
+<AISimulation prompt={""} response={"| Leverandør | Pris | Leveringstid | Fordele | Ulemper |\n|------------|------|--------------|---------|---------|\n| Firma A    | 45.000 kr | 3 uger   | Hurtig levering | Aftalt erfaring |\n| Firma B    | 52.000 kr | 2 dage   | Hurtig levering | Højere pris |\n| Firma C    | 48.000 kr | 1 uge    | God balance     | Mindre erfaring |\n\nAnbefaling: Vælg Firma C for den bedste balance mellem pris, tid og erfaring."} />
 
 <ExerciseBox
   title={"Øvelse 2 min"}
   description={"Tag en analyse-opgave. Specificer præcist hvilket format du vil have output i: tabel, punktliste, max antal ord, eller specifik struktur. Se hvordan det ændrer resultatet."}
   steps={[]}
 />
+
+<TipsBox tips={[
+  "Start med en klar rolle eller persona",
+  "Skriv som om du giver instruktion til en kollega",
+  "Hold prompten kort og konkret"
+]} />

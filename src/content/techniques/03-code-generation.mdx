@@ -9,27 +9,21 @@ description: "Få stabil kode med klare krav"
 
 ## KRAV
 
-Kode‑prompts skal have constraints: sprog, format, filnavn, og edge cases.
-
-### Typiske krav
-
-- Sprog + version
-- Input/output format
-- Fejlhåndtering
+<SectionText content={"Kode‑prompts skal have constraints: sprog, format, filnavn, og edge cases.\n\n### Typiske krav\n\n- Sprog + version\n- Input/output format\n- Fejlhåndtering"} />
 
 
 ## SAMMENLIGNING
 
 <PromptComparison
   badPrompt={"Skriv en funktion til at validere email"}
-  goodPrompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."}
+  goodPrompt={"Skriv en TypeScript‑funktion `isValidEmail(email: string): boolean`. Brug regex, ingen eksterne libs. Giv 5 testcases."}
   badExplanation={"Uklarhed giver uens kode."}
   goodExplanation={"Krav giver konsistent output."}
 />
 
-<CopyablePrompt title={"AI‑respons"} prompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."} />
+<CopyablePrompt title={"AI‑respons"} prompt={"Skriv en TypeScript‑funktion `isValidEmail(email: string): boolean`. Brug regex, ingen eksterne libs. Giv 5 testcases."} />
 
-<AISimulation prompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."} response={"export function isValidEmail(email: string): boolean {\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n}\n\n// Tests\nisValidEmail(\"a@b.com\") // true\nisValidEmail(\"test.user@domain.co\") // true\nisValidEmail(\"bad@\") // false\nisValidEmail(\"no-at.com\") // false\nisValidEmail(\"a@b\") // false"} />
+<AISimulation prompt={"Skriv en TypeScript‑funktion `isValidEmail(email: string): boolean`. Brug regex, ingen eksterne libs. Giv 5 testcases."} response={"export function isValidEmail(email: string): boolean {\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n}\n\n// Tests\nisValidEmail(\"a@b.com\") // true\nisValidEmail(\"test.user@domain.co\") // true\nisValidEmail(\"bad@\") // false\nisValidEmail(\"no-at.com\") // false\nisValidEmail(\"a@b\") // false"} />
 
 <ExerciseBox
   title={"Øvelse (4 minutter)"}
@@ -40,3 +34,9 @@ Kode‑prompts skal have constraints: sprog, format, filnavn, og edge cases.
   "Bed om tests"
 ]}
 />
+
+<TipsBox tips={[
+  "Definér outputformat eksplicit (JSON, tabel, bullets)",
+  "Angiv feltnavne og eksempler når du kan",
+  "Hold formatet konsistent fra start til slut"
+]} />
