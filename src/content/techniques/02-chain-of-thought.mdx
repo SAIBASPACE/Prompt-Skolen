@@ -21,26 +21,21 @@ Chain-of-Thought betyder, at du beder modellen om at tænke i trin, før den giv
 ## SAMMENLIGNING
 
 <PromptComparison
-  badPrompt={`Lav en plan for at øge salget med 20%`}
-  goodPrompt={`Lav en plan for at øge salget med 20%. Tænk trin-for-trin: 1) diagnose af nuværende funnel, 2) top 3 flaskehalse, 3) konkrete tiltag pr. flaskehals, 4) målepunkter.`}
-  badExplanation={`Uden struktur bliver planen ofte generisk og springer vigtige mellemtrin over.`}
-  goodExplanation={`Trin-for-trin tvinger modellen til at analysere før den foreslår løsninger.`}
+  badPrompt={"Lav en plan for at øge salget med 20%"}
+  goodPrompt={"Lav en plan for at øge salget med 20%. Tænk trin-for-trin: 1) diagnose af nuværende funnel, 2) top 3 flaskehalse, 3) konkrete tiltag pr. flaskehals, 4) målepunkter."}
+  badExplanation={"Uden struktur bliver planen ofte generisk og springer vigtige mellemtrin over."}
+  goodExplanation={"Trin-for-trin tvinger modellen til at analysere før den foreslår løsninger."}
 />
 
-<CopyablePrompt title=`Prompt-skabelon` prompt={`Du er [rolle]. Løs opgaven trin-for-trin:
-
-1) Antagelser
-2) Analyse
-3) Konkrete anbefalinger
-4) Næste skridt`} />
+<CopyablePrompt title={"Prompt-skabelon"} prompt={"Du er [rolle]. Løs opgaven trin-for-trin:\n\n1) Antagelser\n2) Analyse\n3) Konkrete anbefalinger\n4) Næste skridt"} />
 
 <ExerciseBox
-  title=`Øvelse (4 minutter)`
-  description=`Vælg en opgave du normalt får et middelmådigt svar på. Skriv prompten om, så den kræver trin-for-trin. Sammenlign resultaterne.`
+  title={"Øvelse (4 minutter)"}
+  description={"Vælg en opgave du normalt får et middelmådigt svar på. Skriv prompten om, så den kræver trin-for-trin. Sammenlign resultaterne."}
   steps={[
   "Skriv din gamle prompt",
   "Tilføj “tænk trin-for-trin” + 3-4 konkrete trin",
   "Sammenlign kvaliteten af svaret"
 ]}
-  hint=`Jo tydeligere trin, jo mindre “gætter” modellen.`
+  hint={"Jo tydeligere trin, jo mindre “gætter” modellen."}
 />

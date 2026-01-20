@@ -20,24 +20,21 @@ Self-consistency betyder, at du får modellen til at give flere løsninger på s
 ## SAMMENLIGNING
 
 <PromptComparison
-  badPrompt={`Hvad er den bedste prisstrategi?`}
-  goodPrompt={`Lav 3 forskellige prisstrategier. Vurder fordele/ulemper og vælg den mest robuste løsning til et B2B SaaS produkt.`}
-  badExplanation={`Ét svar kan være tilfældigt eller skævt.`}
-  goodExplanation={`Flere forslag giver dig mulighed for at vælge med overblik.`}
+  badPrompt={"Hvad er den bedste prisstrategi?"}
+  goodPrompt={"Lav 3 forskellige prisstrategier. Vurder fordele/ulemper og vælg den mest robuste løsning til et B2B SaaS produkt."}
+  badExplanation={"Ét svar kan være tilfældigt eller skævt."}
+  goodExplanation={"Flere forslag giver dig mulighed for at vælge med overblik."}
 />
 
-<CopyablePrompt title=`Prompt-skabelon` prompt={`Lav 3 alternative løsninger. For hver:
-- Kort rationale
-- Fordele/ulemper
-Til sidst: vælg den bedste og forklar hvorfor.`} />
+<CopyablePrompt title={"Prompt-skabelon"} prompt={"Lav 3 alternative løsninger. For hver:\n- Kort rationale\n- Fordele/ulemper\nTil sidst: vælg den bedste og forklar hvorfor."} />
 
 <ExerciseBox
-  title=`Øvelse (4 minutter)`
-  description=`Bed modellen om 3 løsninger på et reelt problem du står med. Vælg den bedste.`
+  title={"Øvelse (4 minutter)"}
+  description={"Bed modellen om 3 løsninger på et reelt problem du står med. Vælg den bedste."}
   steps={[
   "Beskriv problemet kort",
   "Bed om 3 løsninger",
   "Vælg den mest robuste løsning"
 ]}
-  hint=`Brug krav som “robust”, “lav risiko” eller “hurtig implementering”.`
+  hint={"Brug krav som “robust”, “lav risiko” eller “hurtig implementering”."}
 />

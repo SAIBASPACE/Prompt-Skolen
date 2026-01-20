@@ -21,34 +21,23 @@ JSON gør AI‑output maskinlæsbar. Det betyder mindre manuelt arbejde og færr
 ## SAMMENLIGNING
 
 <PromptComparison
-  badPrompt={`Liste de vigtigste features`}
-  goodPrompt={`Returnér kun JSON: [{"feature":"...", "benefit":"..."}]`}
-  badExplanation={`Ustruktureret output kræver oprydning.`}
-  goodExplanation={`JSON er klar til at blive brugt direkte.`}
+  badPrompt={"Liste de vigtigste features"}
+  goodPrompt={"Returnér kun JSON: [{\"feature\":\"...\", \"benefit\":\"...\"}]"}
+  badExplanation={"Ustruktureret output kræver oprydning."}
+  goodExplanation={"JSON er klar til at blive brugt direkte."}
 />
 
-<CopyablePrompt title=`JSON skabelon` prompt={`Returnér kun JSON:
-[
-  {"feature":"AI assistant","benefit":"Sparer tid"},
-  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
-]`} />
+<CopyablePrompt title={"JSON skabelon"} prompt={"Returnér kun JSON:\n[\n  {\"feature\":\"AI assistant\",\"benefit\":\"Sparer tid\"},\n  {\"feature\":\"Auto summaries\",\"benefit\":\"Hurtigt overblik\"}\n]"} />
 
-<AISimulation prompt={`Returnér kun JSON:
-[
-  {"feature":"AI assistant","benefit":"Sparer tid"},
-  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
-]`} response={`[
-  {"feature":"AI assistant","benefit":"Sparer tid"},
-  {"feature":"Auto summaries","benefit":"Hurtigt overblik"}
-]`} />
+<AISimulation prompt={"Returnér kun JSON:\n[\n  {\"feature\":\"AI assistant\",\"benefit\":\"Sparer tid\"},\n  {\"feature\":\"Auto summaries\",\"benefit\":\"Hurtigt overblik\"}\n]"} response={"[\n  {\"feature\":\"AI assistant\",\"benefit\":\"Sparer tid\"},\n  {\"feature\":\"Auto summaries\",\"benefit\":\"Hurtigt overblik\"}\n]"} />
 
 <ExerciseBox
-  title=`Øvelse (4 minutter)`
-  description=`Definér et JSON‑format til en opgave du ofte laver.`
+  title={"Øvelse (4 minutter)"}
+  description={"Definér et JSON‑format til en opgave du ofte laver."}
   steps={[
   "Vælg 3 felter",
   "Tilføj eksempelværdier",
   "Kør prompten"
 ]}
-  hint=`Sæt altid “returnér kun JSON”.`
+  hint={"Sæt altid “returnér kun JSON”."}
 />

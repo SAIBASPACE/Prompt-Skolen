@@ -21,28 +21,19 @@ Kode‑prompts skal have constraints: sprog, format, filnavn, og edge cases.
 ## SAMMENLIGNING
 
 <PromptComparison
-  badPrompt={`Skriv en funktion til at validere email`}
-  goodPrompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`}
-  badExplanation={`Uklarhed giver uens kode.`}
-  goodExplanation={`Krav giver konsistent output.`}
+  badPrompt={"Skriv en funktion til at validere email"}
+  goodPrompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."}
+  badExplanation={"Uklarhed giver uens kode."}
+  goodExplanation={"Krav giver konsistent output."}
 />
 
-<CopyablePrompt title=`AI‑respons` prompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`} />
+<CopyablePrompt title={"AI‑respons"} prompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."} />
 
-<AISimulation prompt={`Skriv en TypeScript‑funktion \`isValidEmail(email: string): boolean\`. Brug regex, ingen eksterne libs. Giv 5 testcases.`} response={`export function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-// Tests
-isValidEmail("a@b.com") // true
-isValidEmail("test.user@domain.co") // true
-isValidEmail("bad@") // false
-isValidEmail("no-at.com") // false
-isValidEmail("a@b") // false`} />
+<AISimulation prompt={"Skriv en TypeScript‑funktion \\`isValidEmail(email: string): boolean\\`. Brug regex, ingen eksterne libs. Giv 5 testcases."} response={"export function isValidEmail(email: string): boolean {\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n}\n\n// Tests\nisValidEmail(\"a@b.com\") // true\nisValidEmail(\"test.user@domain.co\") // true\nisValidEmail(\"bad@\") // false\nisValidEmail(\"no-at.com\") // false\nisValidEmail(\"a@b\") // false"} />
 
 <ExerciseBox
-  title=`Øvelse (4 minutter)`
-  description=`Vælg en lille kodeopgave og tilføj klare constraints.`
+  title={"Øvelse (4 minutter)"}
+  description={"Vælg en lille kodeopgave og tilføj klare constraints."}
   steps={[
   "Angiv sprog og version",
   "Angiv input/output",

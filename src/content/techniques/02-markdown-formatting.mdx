@@ -21,42 +21,19 @@ Markdown gør svaret læsbart og klar til docs, Notion eller GitHub.
 ## SAMMENLIGNING
 
 <PromptComparison
-  badPrompt={`Sammenlign disse værktøjer`}
-  goodPrompt={`Svar i Markdown med en tabel: Værktøj | Fordel | Ulempe | Pris`}
-  badExplanation={`Svar bliver en lang tekst.`}
-  goodExplanation={`Markdown er hurtigt at skimme og dele.`}
+  badPrompt={"Sammenlign disse værktøjer"}
+  goodPrompt={"Svar i Markdown med en tabel: Værktøj | Fordel | Ulempe | Pris"}
+  badExplanation={"Svar bliver en lang tekst."}
+  goodExplanation={"Markdown er hurtigt at skimme og dele."}
 />
 
-<CopyablePrompt title=`Markdown skabelon` prompt={`Svar i Markdown:
-## Oversigt
-- Punkt 1
-- Punkt 2
+<CopyablePrompt title={"Markdown skabelon"} prompt={"Svar i Markdown:\n## Oversigt\n- Punkt 1\n- Punkt 2\n\n## Tabel\n| Værktøj | Fordel | Pris |\n|---|---|---|\n| X | Y | Z |"} />
 
-## Tabel
-| Værktøj | Fordel | Pris |
-|---|---|---|
-| X | Y | Z |`} />
-
-<AISimulation prompt={`Svar i Markdown:
-## Oversigt
-- Punkt 1
-- Punkt 2
-
-## Tabel
-| Værktøj | Fordel | Pris |
-|---|---|---|
-| X | Y | Z |`} response={`## Oversigt
-- Hurtig at skimme
-- Nem at dele
-
-## Tabel
-| Værktøj | Fordel | Pris |
-|---|---|---|
-| X | Y | Z |`} />
+<AISimulation prompt={"Svar i Markdown:\n## Oversigt\n- Punkt 1\n- Punkt 2\n\n## Tabel\n| Værktøj | Fordel | Pris |\n|---|---|---|\n| X | Y | Z |"} response={"## Oversigt\n- Hurtig at skimme\n- Nem at dele\n\n## Tabel\n| Værktøj | Fordel | Pris |\n|---|---|---|\n| X | Y | Z |"} />
 
 <ExerciseBox
-  title=`Øvelse (3 minutter)`
-  description=`Tag en tekst‑prompt og omskriv den til Markdown‑format.`
+  title={"Øvelse (3 minutter)"}
+  description={"Tag en tekst‑prompt og omskriv den til Markdown‑format."}
   steps={[
   "Tilføj 2 overskrifter",
   "Lav en liste",
